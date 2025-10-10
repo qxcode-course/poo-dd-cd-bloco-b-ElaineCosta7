@@ -11,7 +11,7 @@ class Chinela:
     def get_tamanho(self) -> int: #leitura
         return self.__tamanho
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"{self.__tamanho}"
 
 chinela = Chinela()

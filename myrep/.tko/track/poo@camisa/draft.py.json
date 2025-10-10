@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-10_03-15-29",
+            "content": "@@ -43,324 +43,16 @@\n ho: \n-str):%0A        self.__tamanho = ''%0A%0A    def set_tamanho(self, valor: str) -%3E None:%0A        if valor != %22PP%22 or valor != %22P%22 or valor != %22M%22 or valor != %22G%22 or valor != %22GG%22 or valor != %22XG%22:%0A            print(%22tamanho inv%C3%A1lido%22)%0A            return True%0A        self.__tamanho = valor%0A%0A    def get_tamanho(self) -%3E str\n+int = 0)\n :%0A  \n@@ -61,360 +61,47 @@\n     \n-return \n self.\n-__\n tamanho\n-%0A%0A    def __str__(self) -%3E str:%0A        return f%22%7Bself.__tamanho%7D%22%0A%0Acamisa = Camisa()%0Awhile True:%0A    if camisa.get_tamanho() == 0:%0A        print(%22insira seu n%C3%BAmero de camisa:%22)%0A        tamanho = input()%0A        if camisa.set_tamanho(tamanho) != True:%0A            print(%22seu n%C3%BAmero de camisa %C3%A9%22, camisa.get_tamanho())%0A            break\n+: int = 0%0A%0A    #def set_tamanho\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-10-10_03-45-56",
+            "content": "@@ -74,11 +74,10 @@\n o = \n-%22 %22\n+''\n %0A%0A  \n@@ -111,12 +111,20 @@\n or: \n-int)\n+str) -%3E None\n :%0A  \n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-10_03-50-02",
+            "content": "@@ -453,17 +453,16 @@\n %0A%0Acamisa\n-1\n  = Camis\n@@ -467,10 +467,8 @@\n isa(\n-%22%22\n )%0Awh\n@@ -490,17 +490,16 @@\n f camisa\n-1\n .get_tam\n@@ -604,9 +604,8 @@\n misa\n-1\n .set\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-10_03-52-13",
+            "content": "@@ -512,19 +512,17 @@\n ho() == \n-%22 %22\n+0\n :%0A      \n@@ -682,25 +682,24 @@\n a %C3%A9%22, camisa\n-1\n .get_tamanho\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-10_04-06-57",
+            "content": "@@ -108,19 +108,19 @@\n  valor: \n-str\n+int\n ):%0A     \n@@ -279,20 +279,19 @@\n  return \n-Fals\n+Tru\n e%0A      \n@@ -539,30 +539,29 @@\n %22insira seu \n-tamanh\n+n%C3%BAmer\n o de camisa:\n@@ -636,12 +636,11 @@\n  != \n-Fals\n+Tru\n e:%0A \n@@ -661,22 +661,21 @@\n nt(%22seu \n-tamanh\n+n%C3%BAmer\n o de cam\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-10_04-15-49",
+            "content": "@@ -475,20 +475,19 @@\n )%0Awhile \n-Fals\n+Tru\n e:%0A    i\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-10_04-16-24",
+            "content": "@@ -138,41 +138,94 @@\n  != \n-%5B\n %22PP%22\n-, %22P%22, %22M%22, %22G%22, %22GG%22,\n+ or valor != %22P%22 or valor != %22M%22 or valor != %22G%22 or valor != %22GG%22 or valor !=\n  %22XG%22\n-%5D\n :%0A  \n@@ -279,19 +279,20 @@\n  return \n-Tru\n+Fals\n e%0A      \n@@ -475,19 +475,20 @@\n )%0Awhile \n-Tru\n+Fals\n e:%0A    i\n@@ -639,11 +639,12 @@\n  != \n-Tru\n+Fals\n e:%0A \n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-10_04-28-18",
+            "content": "@@ -122,24 +122,26 @@\n         \n-tamanho \n+if valor !\n = %5B%22PP%22,\n@@ -171,36 +171,8 @@\n XG%22%5D\n-%0A        if valor != tamanho\n :%0A  \n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-10_04-29-10",
+            "content": "@@ -126,23 +126,17 @@\n     \n-if valor not in\n+tamanho =\n  %5B%22P\n@@ -165,16 +165,44 @@\n %22, %22XG%22%5D\n+%0A        if valor != tamanho\n :%0A      \n@@ -256,12 +256,11 @@\n urn \n-Fals\n+Tru\n e%0A  \n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-10_04-54-16",
+            "content": "class Camisa:\n    def __init__(self, tamanho: str):\n        self.__tamanho = \" \"\n\n    def set_tamanho(self, valor: str):\n        if valor not in [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]:\n            print(\"tamanho inv\u00e1lido\")\n            return False\n        self.__tamanho = valor\n\n    def get_tamanho(self) -> str:\n        return self.__tamanho\n\n    def __str__(self) -> str:\n        return f\"{self.__tamanho}\"\n\ncamisa1 = Camisa(\"\")\nwhile True:\n    if camisa1.get_tamanho() == \" \":\n        print(\"insira seu tamanho de camisa:\")\n        tamanho = input()\n        if camisa1.set_tamanho(tamanho) != True:\n            print(\"seu tamanho de camisa \u00e9\", camisa1.get_tamanho())\n            break",
+            "lines": "24"
+        }
+    ]
+}

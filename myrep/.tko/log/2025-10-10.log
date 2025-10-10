@@ -2,3 +2,24 @@
 2025-10-10 00:46:10, EXEC, v:1, k:poo@chinela, mode:FREE, size:26
 2025-10-10 03:03:02, SELF, v:1, k:poo@chinela, rate:100, human:namorado, alone:7
 2025-10-10 03:04:26, SELF, v:1, k:poo@chinela, rate:100, human:namorado, alone:7, study:60
+2025-10-10 03:15:27, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-10 03:15:29, EXEC, v:1, k:poo@camisa, mode:FREE, size:5
+2025-10-10 03:45:54, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-10 03:45:56, EXEC, v:1, k:poo@camisa, mode:FREE, size:24
+2025-10-10 03:50:01, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-10 03:50:02, EXEC, v:1, k:poo@camisa, mode:FREE, size:24
+2025-10-10 03:52:12, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-10 03:52:13, EXEC, v:1, k:poo@camisa, mode:FREE, size:24
+2025-10-10 04:06:56, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-10 04:06:57, EXEC, v:1, k:poo@camisa, mode:FREE, size:24
+2025-10-10 04:15:48, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-10 04:15:49, EXEC, v:1, k:poo@camisa, mode:FREE, size:24
+2025-10-10 04:16:21, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-10 04:16:24, EXEC, v:1, k:poo@camisa, mode:FREE, size:24
+2025-10-10 04:28:17, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-10 04:28:18, EXEC, v:1, k:poo@camisa, mode:FREE, size:24
+2025-10-10 04:29:10, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-10 04:29:10, EXEC, v:1, k:poo@camisa, mode:FREE, size:25
+2025-10-10 04:54:15, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-10 04:54:16, EXEC, v:1, k:poo@camisa, mode:FREE, size:24
+2025-10-10 04:57:44, SELF, v:1, k:poo@camisa, rate:100, human:namorado, alone:7, study:100
