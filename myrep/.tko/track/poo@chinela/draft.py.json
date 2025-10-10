@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-06_19-40-05",
+            "content": "@@ -1,1228 +0,0 @@\n-class Chinela:%0A    def __init__(self, tamanho: int = 0):%0A        self.__tamanho: int = tamanho%0A%0A    def set_Tamanho(self, valor: int) -%3E None:%0A        if valor %3C 20 or valor %3E 50 or valor / 2 == 1:%0A            print(%22tamanho inv%C3%A1lido%22)%0A            return%0A%0A    def get_Tamanho(self) -%3E int:%0A        return self.__tamanho%0A%0A    def __str__(self):%0A        return f%22%7Bself.__tamanho%7D%22%0A%0Achinela1 = Chinela(34)%0A       #self.__tamanho / 2 == 0%0A    # c%C3%B3digo do Tempo%0A# 1. usar o __ no come%C3%A7o pra definir private%0A# 2. criar um get_algo para leitura e retornar o valor%0A# 3. criar um set_algo que recebe um valor%0A# 4. parametros default utilizados quando o valor n%C3%A3o vem%0A# 5. parametros nomeados quando quero um valor especifico%0A%0Aclass Tempo:%0A    def __init__(self, hora: int = 0, min: int = 0):%0A        self.__h = 0%0A        self.set_hora(hora)%0A        self.__m = min%0A        self.__s = 0%0A%0A    def set_hora(self, valor: int) -%3E None: # escrita%0A        if valor %3E 11 or valor %3C 0:%0A            print(%22hora errada%22)%0A            return%0A        self.__h = valor%0A%0A    def get_hora(self) -%3E int: # leitura%0A        return self.__h%0A%0A    def __str__(self):%0A        return f%22%7Bself.__h%7D:%7Bself.__m%7D:%7Bself.__s%7D%22%0A%0Aagora = Tempo(min=55, hora=9)%0Aprint(agora)\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-06_20-08-26",
+            "content": "@@ -84,43 +84,15 @@\n t = \n-0%0A        self.set_tamanho(tamanho)\n+tamanho\n %0A%0A  \n@@ -101,17 +101,17 @@\n def set_\n-t\n+T\n amanho(s\n@@ -185,16 +185,16 @@\n lor \n-%25 2 != 0\n+/ 2 == 1\n :%0A  \n@@ -251,39 +251,8 @@\n turn\n-%0A        self.__tamanho = valor\n %0A%0A  \n@@ -396,26 +396,10 @@\n ela(\n-21)%0Aprint(chinela1\n+34\n )%0A  \n@@ -709,8 +709,520 @@\n ecifico%0A\n+%0Aclass Tempo:%0A    def __init__(self, hora: int = 0, min: int = 0):%0A        self.__h = 0%0A        self.set_hora(hora)%0A        self.__m = min%0A        self.__s = 0%0A%0A    def set_hora(self, valor: int) -%3E None: # escrita%0A        if valor %3E 11 or valor %3C 0:%0A            print(%22hora errada%22)%0A            return%0A        self.__h = valor%0A%0A    def get_hora(self) -%3E int: # leitura%0A        return self.__h%0A%0A    def __str__(self):%0A        return f%22%7Bself.__h%7D:%7Bself.__m%7D:%7Bself.__s%7D%22%0A%0Aagora = Tempo(min=55, hora=9)%0Aprint(agora)\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-07_03-42-17",
+            "content": "@@ -345,17 +345,8 @@\n int:\n- #leitura\n %0A   \n@@ -454,17 +454,16 @@\n nela(21)\n-r\n %0Aprint(c\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-10_00-46-10",
+            "content": "class Chinela:\n    def __init__(self, tamanho: int = 0):\n        self.__tamanho: int = 0\n        self.set_tamanho(tamanho)\n\n    def set_tamanho(self, valor: int) -> None:\n        if valor < 20 or valor > 50 or valor % 2 != 0:\n            print(\"tamanho inv\u00e1lido\")\n            return\n        self.__tamanho = valor\n\n    def get_Tamanho(self) -> int: #leitura\n        return self.__tamanho\n\n    def __str__(self):\n        return f\"{self.__tamanho}\"\n\nchinela1 = Chinela(21)r\nprint(chinela1)\n       #self.__tamanho / 2 == 0\n    # c\u00f3digo do Tempo\n# 1. usar o __ no come\u00e7o pra definir private\n# 2. criar um get_algo para leitura e retornar o valor\n# 3. criar um set_algo que recebe um valor\n# 4. parametros default utilizados quando o valor n\u00e3o vem\n# 5. parametros nomeados quando quero um valor especifico\n",
+            "lines": "26"
+        }
+    ]
+}

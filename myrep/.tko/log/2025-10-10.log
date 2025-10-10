@@ -1,0 +1,4 @@
+2025-10-10 00:46:01, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-10 00:46:10, EXEC, v:1, k:poo@chinela, mode:FREE, size:26
+2025-10-10 03:03:02, SELF, v:1, k:poo@chinela, rate:100, human:namorado, alone:7
+2025-10-10 03:04:26, SELF, v:1, k:poo@chinela, rate:100, human:namorado, alone:7, study:60

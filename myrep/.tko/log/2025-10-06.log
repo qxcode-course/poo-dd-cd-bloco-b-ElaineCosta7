@@ -4,3 +4,9 @@
 2025-10-06 19:33:53, MOVE, v:1, k:poo@camisa, mode:DOWN
 2025-10-06 19:33:55, MOVE, v:1, k:poo@roupa, mode:DOWN
 2025-10-06 19:33:56, MOVE, v:1, k:poo@relogio, mode:DOWN
+2025-10-06 19:40:03, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-06 19:40:05, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:100, size:0
+2025-10-06 19:40:06, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:100
+2025-10-06 20:08:15, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-06 20:08:24, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-06 20:08:26, EXEC, v:1, k:poo@chinela, mode:FREE, size:45
