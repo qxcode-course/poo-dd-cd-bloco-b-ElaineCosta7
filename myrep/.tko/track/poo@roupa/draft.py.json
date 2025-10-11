@@ -1,0 +1,449 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-11_03-04-31",
+            "content": "@@ -421,16 +421,17 @@\n   camisa\n+1\n  = Camis\n@@ -464,252 +464,8 @@\n     \n-line: str = input()%0A        ptint(%22$%22 = line)%0A        args: list%5Bstr%5D = line.split(%22 %22)%0A        if args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22show%22:%0A            print(camisa)%0A        else:%0A            print(%22comando invalido%22)\n %0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-11_03-07-06",
+            "content": "@@ -501,9 +501,9 @@\n %22$%22 \n-+\n+=\n  lin\n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-10-11_03-07-21",
+            "content": "@@ -484,25 +484,25 @@\n ()%0A        p\n-r\n+t\n int(%22$%22 + li\n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-10-11_03-07-29",
+            "content": "@@ -656,66 +656,8 @@\n sa)%0A\n-        elif args%5B0%5D == %22size%22:%0A            set_tamanho()%0A\n     \n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-10-11_03-08-33",
+            "content": "@@ -700,15 +700,8 @@\n     \n-camisa.\n set_\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-11_03-08-54",
+            "content": "@@ -715,21 +715,16 @@\n tamanho(\n-valor\n )%0A      \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-11_03-09-06",
+            "content": "@@ -686,46 +686,9 @@\n ize%22\n-%0A            valor: int = int(args%7B1%7D)\n+:\n %0A   \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-11_03-10-21",
+            "content": "@@ -682,17 +682,16 @@\n = %22size%22\n-:\n %0A       \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_03-10-27",
+            "content": "@@ -721,11 +721,11 @@\n args\n-%5B1%5D\n+%7B1%7D\n )%0A  \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_03-10-39",
+            "content": "@@ -703,19 +703,25 @@\n  valor: \n-str\n+int = int\n (args%5B1%5D\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_03-11-19",
+            "content": "@@ -700,64 +700,64 @@\n     \n-camisa.set_tamanho(valor)%0A            valor: str(args%5B1%5D\n+valor: str(args%5B1%5D)%0A            camisa.set_tamanho(valor\n )%0A  \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_03-11-37",
+            "content": "@@ -720,21 +720,16 @@\n ho(valor\n-: str\n )%0A      \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_03-12-06",
+            "content": "@@ -720,18 +720,17 @@\n ho(valor\n- =\n+:\n  str)%0A  \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_03-12-13",
+            "content": "@@ -196,57 +196,24 @@\n nt(%22\n-fail: Valor inv%C3%A1lido, tente PP, P, M, G, GG ou XG\n+tamanho inv%C3%A1lido\n %22)%0A \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_03-12-33",
+            "content": "@@ -773,16 +773,35 @@\n         \n+valor: str(args%5B1%5D)\n %0A       \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_03-12-54",
+            "content": "@@ -761,16 +761,29 @@\n  = str)%0A\n+            %0A\n         \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_03-13-00",
+            "content": "@@ -681,16 +681,14 @@\n int(\n-size: ()\n+camisa\n )%0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-11_03-13-41",
+            "content": "@@ -687,26 +687,10 @@\n ze: \n-%5Bcamisa.__tamanho%5D\n+()\n )%0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-11_03-14-01",
+            "content": "@@ -683,17 +683,17 @@\n t(size: \n-%7B\n+%5B\n camisa._\n@@ -700,17 +700,17 @@\n _tamanho\n-%7D\n+%5D\n )%0A      \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-11_03-14-12",
+            "content": "@@ -681,15 +681,13 @@\n int(\n-%22\n size:\n-%22\n  %7Bca\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-11_03-14-51",
+            "content": "@@ -684,17 +684,16 @@\n (%22size:%22\n-,\n  %7Bcamisa\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-11_03-14-57",
+            "content": "@@ -694,19 +694,17 @@\n %7Bcamisa.\n-get\n+_\n _tamanho\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-11_03-15-17",
+            "content": "@@ -77,47 +77,8 @@\n  %22 %22\n-%0A        self.set_tamanho(str(tamanho))\n %0A%0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-11_03-16-05",
+            "content": "@@ -726,10 +726,11 @@\n ize:\n+%22,\n  \n-(\n %7Bcam\n@@ -746,18 +746,16 @@\n amanho%7D)\n-%22)\n %0A       \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_03-17-07",
+            "content": "@@ -722,17 +722,16 @@\n t(%22size:\n-%22\n  (%7Bcamis\n@@ -745,16 +745,17 @@\n amanho%7D)\n+%22\n )%0A      \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_03-17-48",
+            "content": "@@ -723,17 +723,16 @@\n (%22size:%22\n-,\n  (%7Bcamis\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_03-18-11",
+            "content": "@@ -726,12 +726,33 @@\n ize:\n- ()%22\n+%22, (%7Bcamisa.get_tamanho%7D)\n )%0A  \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_13-09-10",
+            "content": "@@ -726,31 +726,12 @@\n ize:\n-%22, %7Bcamisa.get_tamanho%7D\n+ ()%22\n )%0A  \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_13-13-39",
+            "content": "@@ -725,16 +725,17 @@\n size:%22, \n+%7B\n camisa.g\n@@ -744,16 +744,17 @@\n _tamanho\n+%7D\n )%0A      \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_13-14-24",
+            "content": "@@ -161,16 +161,137 @@\n         \n+if valor not in %5B%22PP%22, %22P%22, %22M%22, %22G%22, %22GG%22, %22XG%22%5D:%0A            print(%22fail: Valor inv%C3%A1lido, tente PP, P, M, G, GG ou XG%22)\n %0A       \n@@ -729,10 +729,8 @@\n :%22, \n-(%7B\n cami\n@@ -747,10 +747,8 @@\n anho\n-%7D)\n )%0A  \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_13-15-07",
+            "content": "@@ -165,129 +165,8 @@\n     \n-if valor not in %5B%22PP%22, %22P%22, %22M%22, %22G%22, %22GG%22, %22XG%22%5D:%0A            print(%22fail: Valor inv%C3%A1lido, tente PP, P, M, G, GG ou XG%22)\n %0A   \n@@ -383,17 +383,16 @@\n Camisa(%22\n- \n %22)%0A    w\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-11_13-15-26",
+            "content": "@@ -689,9 +689,9 @@\n rgs%5B\n-1\n+0\n %5D ==\n@@ -772,9 +772,9 @@\n rgs%5B\n-2\n+0\n %5D ==\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_13-17-01",
+            "content": "@@ -681,25 +681,25 @@\n   elif args%5B\n-0\n+1\n %5D == %22show%22:\n@@ -764,25 +764,25 @@\n   elif args%5B\n-0\n+2\n %5D == %22size%22:\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_13-17-44",
+            "content": "@@ -746,18 +746,16 @@\n _tamanho\n-()\n %7D))%0A    \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_13-21-05",
+            "content": "@@ -823,23 +823,19 @@\n valor = \n-input()\n+str\n )%0A      \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_13-21-51",
+            "content": "@@ -823,34 +823,21 @@\n valor = \n-camisa.set_tamanho\n+input\n ())%0A    \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_13-24-04",
+            "content": "@@ -841,16 +841,18 @@\n _tamanho\n+()\n )%0A      \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_13-24-12",
+            "content": "@@ -823,20 +823,34 @@\n valor = \n-line\n+camisa.set_tamanho\n )%0A      \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_13-25-55",
+            "content": "@@ -827,16 +827,12 @@\n r = \n-camisa()\n+line\n )%0A  \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_13-26-38",
+            "content": "@@ -788,43 +788,8 @@\n e%22:%0A\n-            tamanho = str(args%5B1%5D)%0A\n     \n@@ -820,16 +820,27 @@\n ho(valor\n+ = camisa()\n )%0A      \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-11_13-30-16",
+            "content": "@@ -855,22 +855,16 @@\n ho(valor\n- = str\n )%0A      \n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-11_13-30-29",
+            "content": "@@ -859,16 +859,14 @@\n alor\n-(args%5B%5D)\n+ = str\n )%0A  \n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-11_13-30-46",
+            "content": "@@ -823,41 +823,8 @@\n 1%5D)%0A\n-            valor = str(args%5B2%5D)%0A\n     \n@@ -850,16 +850,29 @@\n tamanho(\n+valor(args%5B%5D)\n )%0A      \n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-11_13-31-08",
+            "content": "@@ -883,27 +883,16 @@\n tamanho(\n-valor = str\n )%0A      \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-11_13-31-18",
+            "content": "@@ -840,33 +840,33 @@\n alor = str(args%5B\n-1\n+2\n %5D)%0A            c\n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-11_13-31-27",
+            "content": "@@ -839,23 +839,28 @@\n valor = \n+str(\n args%5B1%5D\n+)\n %0A       \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-11_13-32-14",
+            "content": "@@ -819,16 +819,43 @@\n rgs%5B1%5D)%0A\n+            valor = args%5B1%5D\n %0A       \n@@ -886,23 +886,19 @@\n valor = \n-args%5B1%5D\n+str\n )%0A      \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-11_13-32-32",
+            "content": "@@ -859,19 +859,23 @@\n valor = \n-str\n+args%5B1%5D\n )%0A      \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-11_13-33-25",
+            "content": "@@ -859,23 +859,19 @@\n valor = \n-args%5B1%5D\n+str\n )%0A      \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-11_13-33-40",
+            "content": "@@ -727,16 +727,17 @@\n ize:%22, (\n+%7B\n camisa.g\n@@ -748,16 +748,17 @@\n amanho()\n+%7D\n ))%0A     \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-11_13-35-46",
+            "content": "@@ -727,11 +727,8 @@\n ize:\n- ()\n %22, (\n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-11_13-35-58",
+            "content": "@@ -820,9 +820,9 @@\n rgs%5B\n-2\n+1\n %5D)%0A%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-11_13-38-54",
+            "content": "@@ -797,17 +797,16 @@\n         \n-_\n tamanho \n@@ -811,15 +811,21 @@\n o = \n+str(\n args%5B\n-1%5D\n+2%5D)%0A\n %0A   \n@@ -837,77 +837,42 @@\n     \n-if args%5B2%5D not in set_tamanho():%0A                print('teste safado'\n+camisa.set_tamanho(valor = args%5B1%5D\n )%0A  \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-11_13-49-39",
+            "content": "@@ -801,73 +801,109 @@\n     \n-if args%5B1%5D = None:%0A                print(%22size: ()%22)%0A            \n+_tamanho = args%5B1%5D%0A            if args%5B2%5D not in set_tamanho():%0A                print('teste safado')\n %0A   \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-11_13-54-38",
+            "content": "@@ -809,17 +809,16 @@\n rgs%5B1%5D =\n-=\n  None:%0A \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-11_13-54-47",
+            "content": "@@ -855,49 +855,8 @@\n )%22)%0A\n-            else:%0A                return%0A\n     \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-10-11_13-55-59",
+            "content": "@@ -889,28 +889,14 @@\n     \n-camisa.set_tamanho()\n+return\n %0A   \n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-11_13-56-40",
+            "content": "@@ -904,21 +904,16 @@\n tamanho(\n-valor\n )%0A      \n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-11_13-56-52",
+            "content": "@@ -913,14 +913,8 @@\n alor\n- = str\n )%0A  \n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-11_13-57-02",
+            "content": "@@ -908,19 +908,20 @@\n nho(\n-) = args%5B1%5D\n+valor = str)\n %0A   \n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-11_13-57-49",
+            "content": "@@ -907,17 +907,16 @@\n anho() =\n-=\n  args%5B1%5D\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-11_13-57-58",
+            "content": "@@ -914,17 +914,17 @@\n == args%5B\n-0\n+1\n %5D%0A      \n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-11_13-58-09",
+            "content": "@@ -909,20 +909,23 @@\n ho() == \n-line\n+args%5B0%5D\n %0A       \n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-11_13-58-26",
+            "content": "@@ -804,22 +804,23 @@\n  if \n-len(\n args\n-)\n+%5B1%5D\n  == \n-1\n+None\n :%0A  \n@@ -909,16 +909,20 @@\n ho() == \n+line\n %0A       \n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-11_14-02-50",
+            "content": "@@ -850,16 +850,74 @@\n e: ()%22)%0A\n+            else:%0A                camisa.set_tamanho() == \n %0A       \n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-11_14-03-16",
+            "content": "@@ -854,113 +854,8 @@\n )%22)%0A\n-            else:%0A                novo_tamanho = args%5B1%5D%0A                camisa.set_tamanho(novo_tamanho)\n %0A   \n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-11_14-05-28",
+            "content": "@@ -958,10 +958,8 @@\n anho\n-%5B%5D\n )%0A  \n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-11_14-07-26",
+            "content": "@@ -954,16 +954,18 @@\n _tamanho\n+%5B%5D\n )%0A      \n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-11_14-08-37",
+            "content": "@@ -860,32 +860,71 @@\n           else:%0A\n+                novo_tamanho = args%5B1%5D%0A\n                 \n@@ -942,23 +942,28 @@\n tamanho(\n-args%5B1%5D\n+novo_tamanho\n )%0A      \n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-11_14-09-21",
+            "content": "@@ -854,36 +854,81 @@\n )%22)%0A            \n-    \n+else:%0A                camisa.set_tamanho(args%5B1%5D)\n %0A            %0A  \n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-11_14-11-20",
+            "content": "@@ -842,17 +842,16 @@\n int(\n-f\n %22size: (\n %7Bcam\n@@ -850,94 +850,10 @@\n e: (\n-%7Bcamisa.get_tamanho()%7D)%22)%0A            else:%0A                camisa.set_tamanho(args%5B1%5D\n+)%22\n )%0A  \n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-11_14-18-26",
+            "content": "@@ -721,16 +721,21 @@\n int(\n-f\n %22size\n+: ()%22, \n (\n-%7B\n cami\n@@ -742,35 +742,33 @@\n sa.get_tamanho()\n-%7D)%22\n+)\n )%0A        elif a\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-11_14-19-20",
+            "content": "@@ -555,16 +555,8 @@\n ut()\n-.strip()\n %0A   \n@@ -570,18 +570,18 @@\n int(\n-f\n %22$%22\n-%7B\n+ + \n line\n-%7D\n )%0A  \n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-11_14-21-18",
+            "content": "@@ -581,16 +581,15 @@\n (f%22$\n- \n+%22\n %7Bline%7D\n-%22\n )%0A  \n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-11_14-21-41",
+            "content": "@@ -343,27 +343,8 @@\n lor%0A\n-        return True\n %0A   \n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-11_14-21-58",
+            "content": "@@ -103,16 +103,20 @@\n nho(\n+str(\n tamanho)\n %0A%0A  \n@@ -111,16 +111,17 @@\n tamanho)\n+)\n %0A%0A    de\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-11_14-22-20",
+            "content": "@@ -71,16 +71,17 @@\n anho = %22\n+ \n %22%0A      \n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-11_14-22-37",
+            "content": "@@ -71,17 +71,16 @@\n anho = %22\n- \n %22%0A      \n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-11_14-22-48",
+            "content": "@@ -71,16 +71,17 @@\n anho = %22\n+ \n %22%0A      \n@@ -518,16 +518,17 @@\n Camisa(%22\n+ \n %22)%0A    w\n@@ -591,16 +591,17 @@\n rint(f%22$\n+ \n %7Bline%7D%22)\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-11_14-25-03",
+            "content": "@@ -151,51 +151,8 @@\n r):%0A\n-        if valor == %22%22:%0A            return%0A\n     \n@@ -206,16 +206,16 @@\n  %22XG%22%5D:%0A\n+\n         \n@@ -337,24 +337,35 @@\n lor%0A        \n+return True\n %0A    def get\n@@ -548,16 +548,21 @@\n     line\n+: str\n  = input\n@@ -598,16 +598,16 @@\n line%7D%22)%0A\n-\n         \n@@ -611,16 +611,26 @@\n    args:\n+ list%5Bstr%5D\n  = line.\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-11_14-32-24",
+            "content": "@@ -637,16 +637,17 @@\n     args\n+:\n  = line.\n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-10-11_14-32-47",
+            "content": "@@ -651,16 +651,19 @@\n e.split(\n+%22 %22\n )%0A      \n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-10-11_14-32-56",
+            "content": "@@ -653,17 +653,16 @@\n split()%0A\n-%0A\n         \n@@ -700,17 +700,16 @@\n   break%0A\n-%0A\n         \n@@ -879,13 +879,9 @@\n ize:\n-%22 + %22\n+ \n (%7Bca\n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-10-11_14-34-05",
+            "content": "@@ -884,14 +884,8 @@\n :%22 +\n- %22 %22 +\n  %22(%7B\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-10-11_14-34-21",
+            "content": "@@ -882,14 +882,16 @@\n ze:%22\n-,\n+ +\n  %22 %22\n-,\n+ +\n  %22(%7B\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-10-11_14-34-43",
+            "content": "@@ -878,20 +878,22 @@\n f%22size:%22\n+,\n  %22 %22\n+,\n  %22(%7Bcami\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-10-11_14-34-58",
+            "content": "@@ -881,11 +881,13 @@\n ize:\n+%22\n  %22\n-+\n+ %22\n  %22(%7B\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-10-11_14-35-11",
+            "content": "@@ -701,28 +701,16 @@\n   break%0A\n-            \n %0A       \n@@ -750,34 +750,32 @@\n     print(f%22size\n-: \n (%7Bcamisa.get_tam\n@@ -878,16 +878,20 @@\n f%22size: \n+%22+ %22\n (%7Bcamisa\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-10-11_14-36-09",
+            "content": "class Camisa:\n    def __init__(self, tamanho: str):\n        self.__tamanho = \"\"\n        self.set_tamanho(tamanho)\n\n    def set_tamanho(self, valor: str):\n        if valor == \"\":\n            return\n        if valor not in [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]:\n            print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\n            return False\n        self.__tamanho = valor\n        \n    def get_tamanho(self) -> str:\n        return self.__tamanho\n\n    def __str__(self) -> str:\n        return f\"{self.__tamanho}\"\n\ndef main():\n    camisa = Camisa(\"\")\n    while True:\n        line = input().strip()\n        print(f\"${line}\")\n        args = line.split()\n\n        if args[0] == \"end\":\n            break\n            \n        elif args[0] == \"show\":\n            print(f\"size: ({camisa.get_tamanho()})\")\n        elif args[0] == \"size\":\n            if len(args) == 1:\n                print(f\"size: ({camisa.get_tamanho()})\")\n            else:\n                camisa.set_tamanho(args[1])\n                \n            \n        else:\n            print(\"comando invalido\")\n    \n\nmain()",
+            "lines": "43"
+        }
+    ]
+}
