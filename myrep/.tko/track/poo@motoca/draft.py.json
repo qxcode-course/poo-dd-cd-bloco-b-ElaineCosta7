@@ -357,8 +357,328 @@
         },
         {
             "label": "2025-10-20_20-19-43",
-            "content": "class Pessoa:\n    def __init__(self, nome: str, idade: int):\n        self.__nome = nome\n        self.__idade = idade\n\n    def get_nome(self) -> str:\n        return self.__nome\n    def get_idade(self) -> int:\n        return self.__idade\n\n    def __str__(self) -> str:\n        return f\"{self.__nome}:{self.__idade}\"\n\nclass Motoca:\n    def __init__(self, cliente: Pessoa = None, potencia: int = 1, tempo: int = 0):\n        self.__cliente: Pessoa | None = None\n        self.__potencia: int = potencia\n        self.__tempo: int = 0\n\n    def inserir(self, cliente: Pessoa) -> bool:\n        if self.__cliente != None:\n            print(\"fail: busy motorcycle\")\n            return False\n        self.__cliente = cliente\n        return True\n\n    def remover(self) -> Pessoa | None:\n        if self.__cliente == None:\n            print(\"fail: empty motorcycle\")\n            return None\n        aux: Pessoa = self.__cliente\n        self.__cliente = None\n        return aux\n\n    #def comprarTempo(self, tempo: number) -> None:\n\n\n    def dirigir(self, tempo: int) -> None:\n        if self.__tempo == 0:\n            print(\"fail: buy time first\")\n        if self.__cliente == None:\n            print(\"fail: empty motorcycle\")\n        if self.__idade > 10:\n            print(\"fail: too old to drive\")\n        if self.__tempo <= 0:\n            print(f\"fail: time finished after {self.__tempo} minutes\")\n\n    #def buzina(self) -> None:\n\n\n    def get_Cliente(self) -> Pessoa | None:\n        return self.__cliente\n    def get_Potencia(self) -> int:\n        return self.__potencia\n    def get_Tempo(self) -> int:\n        return self.__tempo\n\n\n    def __str__(self) -> str:\n        if self.__cliente == None:\n            cliente_str = \"empty\"\n        else:\n            cliente_str = self.__cliente\n        return f\"power:{self.__potencia}, time:{self.__tempo}, person:({cliente_str})\"\n\ndef main():\n    moto = Motoca(None, 1, 0)\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(moto)\n        elif args[0] == \"init\":\n            potencia = args[1]\n            moto = Motoca(None, potencia, 0)\n        elif args[0] == \"enter\":\n            nome = args[1]\n            idade = args[2]\n            cliente = Pessoa(nome, idade)\n            moto.inserir(cliente)\n        elif args[0] == \"leave\":\n            cliente_str: Pessoa = moto.get_Cliente()\n            print(f\"{cliente_str}\")\n            moto.remover()\n        else:\n            print(\"fail: comando invalido\")\n\nmain()",
+            "content": "@@ -2419,16 +2419,69 @@\n leave%22:%0A\n+            cliente_str: Pessoa = moto.get_Cliente()%0A\n         \n",
             "lines": "91"
+        },
+        {
+            "label": "2025-10-20_23-37-43",
+            "content": "@@ -2444,26 +2444,19 @@\n (f%22%7B\n-moto.get_C\n+c\n liente\n-()\n+_str\n %7D%22)%0A\n",
+            "lines": "90"
+        },
+        {
+            "label": "2025-10-20_23-38-14",
+            "content": "@@ -2423,49 +2423,8 @@\n e%22:%0A\n-            if moto.cliente = Pessoa%0A    \n     \n",
+            "lines": "90"
+        },
+        {
+            "label": "2025-10-20_23-39-22",
+            "content": "@@ -2448,17 +2448,16 @@\n liente =\n-=\n  Pessoa%0A\n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-10-20_23-39-29",
+            "content": "@@ -2452,25 +2452,24 @@\n te == Pessoa\n-:\n %0A           \n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-10-20_23-39-34",
+            "content": "@@ -2439,18 +2439,16 @@\n if moto.\n-__\n cliente \n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-10-20_23-40-13",
+            "content": "@@ -2435,29 +2435,27 @@\n     if moto.\n-get_C\n+__c\n liente == Pe\n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-10-20_23-40-29",
+            "content": "@@ -2419,16 +2419,63 @@\n leave%22:%0A\n+            if moto.get_Cliente == Pessoa:%0A    \n         \n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-10-20_23-41-48",
+            "content": "@@ -2423,48 +2423,8 @@\n e%22:%0A\n-            if get_Cliente != None:%0A    \n     \n",
+            "lines": "90"
+        },
+        {
+            "label": "2025-10-20_23-42-11",
+            "content": "@@ -2445,18 +2445,16 @@\n _Cliente\n-()\n  != None\n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-10-20_23-42-20",
+            "content": "@@ -2419,16 +2419,58 @@\n leave%22:%0A\n+            if get_Cliente() != None:%0A    \n         \n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-10-20_23-42-38",
+            "content": "@@ -770,81 +770,8 @@\n ne:%0A\n-        if self.__cliente != None:%0A            print(f%22%7Bget_Cliente()%7D%22)%0A\n     \n@@ -2431,17 +2431,16 @@\n         \n-#\n print(f%22\n",
+            "lines": "90"
+        },
+        {
+            "label": "2025-10-20_23-44-52",
+            "content": "@@ -822,21 +822,16 @@\n rint(f%22%7B\n-self.\n get_Clie\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-10-20_23-45-06",
+            "content": "@@ -1034,24 +1034,25 @@\n rn aux%0A%0A    \n+#\n def comprarT\n@@ -1090,42 +1090,8 @@\n ne:%0A\n-        self.__tempo += increment%0A\n %0A%0A  \n@@ -2513,53 +2513,39 @@\n     \n-moto.remover()%0A        elif args%5B0%5D == %22buy%22:\n+#print(f%22%7Bmoto.get_Cliente()%7D%22)\n %0A   \n@@ -2558,28 +2558,23 @@\n    moto.\n-comprarTempo\n+remover\n ()%0A     \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-10-20_23-47-55",
+            "content": "@@ -1060,35 +1060,38 @@\n po(self, tempo: \n-int\n+number\n ) -%3E None:%0A     \n",
+            "lines": "94"
+        },
+        {
+            "label": "2025-10-20_23-48-10",
+            "content": "@@ -2615,21 +2615,16 @@\n arTempo(\n-tempo\n )%0A      \n",
+            "lines": "94"
+        },
+        {
+            "label": "2025-10-20_23-48-20",
+            "content": "@@ -2589,36 +2589,8 @@\n y%22:%0A\n-            tempo = args%5B1%5D%0A\n     \n",
+            "lines": "94"
+        },
+        {
+            "label": "2025-10-20_23-49-23",
+            "content": "@@ -1064,24 +1064,8 @@\n elf,\n- increment: int,\n  tem\n",
+            "lines": "95"
+        },
+        {
+            "label": "2025-10-20_23-49-49",
+            "content": "@@ -2664,27 +2664,16 @@\n po(tempo\n-, increment\n )%0A      \n",
+            "lines": "95"
+        },
+        {
+            "label": "2025-10-20_23-50-13",
+            "content": "@@ -2605,50 +2605,8 @@\n y%22:%0A\n-            increment: int = int(args%5B1%5D)%0A\n     \n",
+            "lines": "95"
+        },
+        {
+            "label": "2025-10-20_23-52-33",
+            "content": "@@ -2660,33 +2660,33 @@\n    tempo = args%5B\n-2\n+1\n %5D%0A            mo\n",
+            "lines": "96"
+        },
+        {
+            "label": "2025-10-20_23-52-47",
+            "content": "@@ -2643,16 +2643,44 @@\n rgs%5B1%5D)%0A\n+            tempo = args%5B2%5D%0A\n         \n",
+            "lines": "96"
+        },
+        {
+            "label": "2025-10-20_23-52-56",
+            "content": "@@ -2647,32 +2647,8 @@\n 1%5D)%0A\n-            tempo = int%0A\n     \n",
+            "lines": "95"
+        },
+        {
+            "label": "2025-10-20_23-54-28",
+            "content": "@@ -2659,18 +2659,19 @@\n     \n-moto.\n tempo\n+ = int\n %0A   \n",
+            "lines": "96"
+        },
+        {
+            "label": "2025-10-20_23-54-46",
+            "content": "@@ -2601,16 +2601,81 @@\n  %22buy%22:%0A\n+            increment: int = int(args%5B1%5D)%0A            moto.tempo%0A\n         \n@@ -2696,28 +2696,32 @@\n arTempo(\n-int(args%5B1%5D)\n+tempo, increment\n )%0A      \n",
+            "lines": "96"
+        },
+        {
+            "label": "2025-10-21_00-02-43",
+            "content": "@@ -1056,24 +1056,40 @@\n rTempo(self,\n+ increment: int,\n  tempo: int)\n@@ -1122,21 +1122,25 @@\n empo += \n-tempo\n+increment\n %0A%0A%0A    d\n@@ -2605,36 +2605,8 @@\n y%22:%0A\n-            tempo = args%5B1%5D%0A\n     \n@@ -2631,21 +2631,28 @@\n arTempo(\n-tempo\n+int(args%5B1%5D)\n )%0A      \n",
+            "lines": "94"
+        },
+        {
+            "label": "2025-10-21_00-07-15",
+            "content": "@@ -2602,29 +2602,18 @@\n empo\n-: int = int (\n+ = \n args%5B1%5D\n-)\n %0A   \n",
+            "lines": "95"
+        },
+        {
+            "label": "2025-10-21_00-07-51",
+            "content": "@@ -1113,16 +1113,17 @@\n  tempo%0A%0A\n+%0A\n     def \n@@ -2661,73 +2661,8 @@\n po)%0A\n-        elif args%5B0%5D == %22drive%22:%0A            moto.dirigir(tempo)%0A\n     \n",
+            "lines": "95"
+        },
+        {
+            "label": "2025-10-21_00-09-25",
+            "content": "@@ -1160,38 +1160,8 @@\n ne:%0A\n-        self.__tempo -= tempo%0A\n     \n",
+            "lines": "96"
+        },
+        {
+            "label": "2025-10-21_00-12-20",
+            "content": "@@ -2630,32 +2630,33 @@\n tempo: int = int\n+ \n (args%5B1%5D)%0A      \n@@ -2723,46 +2723,8 @@\n e%22:%0A\n-            tempo: int = int(args%5B1%5D)%0A\n     \n",
+            "lines": "97"
+        },
+        {
+            "label": "2025-10-21_00-13-03",
+            "content": "@@ -1359,27 +1359,13 @@\n f.__\n-cliente.get_\n idade\n-()\n  %3E 1\n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-21_00-14-24",
+            "content": "@@ -1146,27 +1146,28 @@\n po: int) -%3E \n-int\n+None\n :%0A        se\n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-21_00-15-00",
+            "content": "@@ -1150,22 +1150,19 @@\n int) -%3E \n-Pessoa\n+int\n :%0A      \n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-21_00-15-48",
+            "content": "@@ -1202,39 +1202,34 @@\n   if self.__\n-cliente == None\n+tempo == 0\n :%0A          \n@@ -1243,32 +1243,30 @@\n (%22fail: \n-empty motorcycle\n+buy time first\n %22)%0A     \n@@ -1274,34 +1274,39 @@\n   if self.__\n-tempo == 0\n+cliente == None\n :%0A          \n@@ -1316,38 +1316,40 @@\n rint(%22fail: \n-buy time first\n+empty motorcycle\n %22)%0A        i\n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-21_00-18-16",
+            "content": "@@ -1267,35 +1267,16 @@\n cycle%22)%0A\n-            return%0A\n         \n@@ -1293,24 +1293,24 @@\n tempo == 0:%0A\n+\n             \n@@ -1339,35 +1339,16 @@\n first%22)%0A\n-            return%0A\n         \n@@ -1431,27 +1431,8 @@\n e%22)%0A\n-            return%0A\n     \n@@ -1453,24 +1453,24 @@\n tempo %3C= 0:%0A\n+\n             \n@@ -1531,38 +1531,8 @@\n es%22)\n-%0A            self.__tempo == 0\n %0A%0A  \n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-21_00-21-53",
+            "content": "@@ -1192,99 +1192,8 @@\n mpo%0A\n-        if self.__tempo == 0:%0A            print(%22fail: buy time first%22)%0A            return%0A\n     \n",
+            "lines": "102"
+        },
+        {
+            "label": "2025-10-21_00-23-22",
+            "content": "@@ -1210,44 +1210,114 @@\n f.__\n-cliente == None and self.__tempo %3E 0\n+tempo == 0:%0A            print(%22fail: buy time first%22)%0A            return%0A        if self.__cliente == None\n :%0A  \n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-10-21_00-24-51",
+            "content": "@@ -1213,32 +1213,53 @@\n _cliente == None\n+ and self.__tempo %3E 0\n :%0A            pr\n",
+            "lines": "102"
+        },
+        {
+            "label": "2025-10-21_00-25-32",
+            "content": "@@ -1206,26 +1206,31 @@\n  self.__\n-tempo == 0\n+cliente == None\n :%0A      \n@@ -1252,22 +1252,24 @@\n il: \n-buy time first\n+empty motorcycle\n %22)%0A \n@@ -1300,39 +1300,34 @@\n   if self.__\n-cliente == None\n+tempo == 0\n :%0A          \n@@ -1341,32 +1341,30 @@\n (%22fail: \n-empty motorcycle\n+buy time first\n %22)%0A     \n",
+            "lines": "102"
+        },
+        {
+            "label": "2025-10-21_00-28-21",
+            "content": "@@ -518,21 +518,17 @@\n : int = \n-tempo\n+0\n %0A%0A    de\n@@ -2542,20 +2542,15 @@\n e = \n-int(\n args%5B2%5D\n-)\n %0A   \n",
+            "lines": "102"
+        },
+        {
+            "label": "2025-10-21_00-31-05",
+            "content": "@@ -1146,37 +1146,69 @@\n  tempo: int) -%3E \n-None:\n+Pessoa:%0A        self.__tempo -= tempo\n %0A        if self\n@@ -1615,16 +1615,17 @@\n _tempo =\n+=\n  0%0A%0A    \n@@ -2409,28 +2409,23 @@\n encia = \n-int(\n args%5B1%5D\n-)\n %0A       \n",
+            "lines": "102"
+        },
+        {
+            "label": "2025-10-21_00-34-36",
+            "content": "@@ -1561,42 +1561,8 @@\n s%22)%0A\n-            self.__tempo -= tempo%0A\n     \n",
+            "lines": "101"
+        },
+        {
+            "label": "2025-10-21_00-59-24",
+            "content": "@@ -1586,12 +1586,21 @@\n mpo \n+-\n = \n-0%0A\n+tempo%0A    \n     \n@@ -1616,24 +1616,19 @@\n __tempo \n--\n = \n-tempo\n+0\n %0A%0A    #d\n",
+            "lines": "102"
+        },
+        {
+            "label": "2025-10-21_00-59-52",
+            "content": "@@ -1557,16 +1557,45 @@\n nutes%22)%0A\n+            self.__tempo = 0%0A\n         \n",
+            "lines": "102"
+        },
+        {
+            "label": "2025-10-21_01-01-55",
+            "content": "@@ -1590,34 +1590,8 @@\n empo\n-%0A        self.__tempo == 0\n %0A%0A  \n",
+            "lines": "101"
+        },
+        {
+            "label": "2025-10-21_01-02-09",
+            "content": "@@ -1561,28 +1561,24 @@\n s%22)%0A        \n-    \n self.__tempo\n@@ -1578,19 +1578,24 @@\n __tempo \n+-\n = \n-0\n+tempo\n %0A       \n@@ -1608,24 +1608,20 @@\n __tempo \n--= tempo\n+== 0\n %0A%0A    #d\n",
+            "lines": "102"
+        },
+        {
+            "label": "2025-10-21_01-04-03",
+            "content": "@@ -2906,117 +2906,8 @@\n po)%0A\n-            if self.__tempo %3C= 0:%0A                print(f%22fail: time finished after %7Bmoto.__tempo%7D minutes%22)%0A\n     \n",
+            "lines": "102"
+        },
+        {
+            "label": "2025-10-21_01-04-43",
+            "content": "@@ -2992,21 +2992,19 @@\n r %7Bmoto.\n-get_T\n+__t\n empo%7D mi\n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-10-21_01-04-56",
+            "content": "@@ -2917,20 +2917,20 @@\n      if \n-moto\n+self\n .__tempo\n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-10-21_01-05-08",
+            "content": "@@ -2922,27 +2922,23 @@\n if moto.\n-get_T\n+__t\n empo\n-()\n  %3C= 0:%0A \n@@ -3001,18 +3001,16 @@\n et_Tempo\n-()\n %7D minute\n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-10-21_01-05-34",
+            "content": "@@ -2894,32 +2894,149 @@\n .dirigir(tempo)%0A\n+            if moto.get_Tempo() %3C= 0:%0A                print(f%22fail: time finished after %7Bmoto.get_Tempo()%7D minutes%22)%0A\n         else:%0A  \n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-10-21_01-06-05",
+            "content": "@@ -1586,34 +1586,16 @@\n mpo = 0%0A\n-        else:%0A    \n         \n",
+            "lines": "102"
+        },
+        {
+            "label": "2025-10-21_01-10-24",
+            "content": "@@ -1470,16 +1470,8 @@\n   if\n- tempo %3E\n  sel\n@@ -1479,16 +1479,21 @@\n .__tempo\n+ %3C= 0\n :%0A      \n",
+            "lines": "103"
+        },
+        {
+            "label": "2025-10-21_01-11-13",
+            "content": "@@ -1638,24 +1638,25 @@\n  tempo%0A%0A    \n+#\n def buzina(s\n@@ -1673,28 +1673,8 @@\n ne:%0A\n-        print(%22Pem%22)\n %0A%0A  \n@@ -2927,66 +2927,8 @@\n po)%0A\n-        elif args%5B0%5D == %22honk%22:%0A            moto.buzina()%0A\n     \n",
+            "lines": "103"
+        },
+        {
+            "label": "2025-10-21_01-14-38",
+            "content": "@@ -1688,29 +1688,9 @@\n t(%22P\n-%22 + %22e%22 * input() + %22\n+e\n m%22)%0A\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-10-21_01-20-53",
+            "content": "@@ -1661,21 +1661,8 @@\n self\n-, vezes = int\n ) -%3E\n@@ -1698,13 +1698,15 @@\n %22 * \n-vezes\n+input()\n  + %22\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-10-21_01-21-17",
+            "content": "@@ -1657,34 +1657,17 @@\n ina(self\n-) -%3E None:%0A       \n+,\n  vezes =\n@@ -1674,17 +1674,18 @@\n  int\n-(input())\n+) -%3E None:\n %0A   \n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-10-21_01-23-16",
+            "content": "@@ -1690,17 +1690,18 @@\n = int(in\n-i\n+pu\n t())%0A   \n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-10-21_01-23-30",
+            "content": "@@ -1688,23 +1688,23 @@\n s = int(\n-args%5B0%5D\n+init())\n %0A       \n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-10-21_01-24-00",
+            "content": "@@ -1695,17 +1695,16 @@\n (args%5B0%5D\n-)\n %0A       \n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-10-21_01-24-06",
+            "content": "@@ -1660,32 +1660,61 @@\n (self) -%3E None:%0A\n+        vezes = int(args%5B0%5D)%0A\n         print(%22P\n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-10-21_01-24-15",
+            "content": "@@ -1693,16 +1693,22 @@\n  + %22e%22 *\n+ vezes\n  + %22m%22)%0A\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-10-21_01-24-23",
+            "content": "@@ -1693,20 +1693,16 @@\n  + %22e%22 *\n- int\n  + %22m%22)%0A\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-10-21_01-25-22",
+            "content": "@@ -1694,31 +1694,19 @@\n + %22e%22 * \n-self.__potencia\n+int\n  + %22m%22)%0A\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-10-21_01-28-22",
+            "content": "class Pessoa:\n    def __init__(self, nome: str, idade: int):\n        self.__nome = nome\n        self.__idade = idade\n\n    def get_nome(self) -> str:\n        return self.__nome\n    def get_idade(self) -> int:\n        return self.__idade\n\n    def __str__(self) -> str:\n        return f\"{self.__nome}:{self.__idade}\"\n\nclass Motoca:\n    def __init__(self, cliente: Pessoa = None, potencia: int = 1, tempo: int = 0):\n        self.__cliente: Pessoa | None = None\n        self.__potencia: int = potencia\n        self.__tempo: int = tempo\n\n    def inserir(self, cliente: Pessoa) -> bool:\n        if self.__cliente != None:\n            print(\"fail: busy motorcycle\")\n            return False\n        self.__cliente = cliente\n        return True\n\n    def remover(self) -> Pessoa | None:\n        if self.__cliente != None:\n            print(f\"{self.get_Cliente()}\")\n        if self.__cliente == None:\n            print(\"fail: empty motorcycle\")\n            return None\n        aux: Pessoa = self.__cliente\n        self.__cliente = None\n        return aux\n\n    def comprarTempo(self, tempo: int) -> None:\n        self.__tempo += tempo\n\n    def dirigir(self, tempo: int) -> None:\n        if self.__tempo == 0:\n            print(\"fail: buy time first\")\n            return\n        if self.__cliente == None:\n            print(\"fail: empty motorcycle\")\n            return\n        if self.__cliente.get_idade() > 10:\n            print(\"fail: too old to drive\")\n            return\n        if tempo > self.__tempo:\n            print(f\"fail: time finished after {self.__tempo} minutes\")\n            self.__tempo = 0\n        else:\n            self.__tempo -= tempo\n\n    def buzina(self) -> None:\n        print(\"P\" + \"e\" * self.__potencia + \"m\")\n\n    def get_Cliente(self) -> Pessoa | None:\n        return self.__cliente\n    def get_Potencia(self) -> int:\n        return self.__potencia\n    def get_Tempo(self) -> int:\n        return self.__tempo\n\n\n    def __str__(self) -> str:\n        if self.__cliente == None:\n            cliente_str = \"empty\"\n        else:\n            cliente_str = self.__cliente\n        return f\"power:{self.__potencia}, time:{self.__tempo}, person:({cliente_str})\"\n\ndef main():\n    moto = Motoca(None, 1, 0)\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(moto)\n        elif args[0] == \"init\":\n            potencia = int(args[1])\n            moto = Motoca(None, potencia, 0)\n        elif args[0] == \"enter\":\n            nome = args[1]\n            idade = int(args[2])\n            cliente = Pessoa(nome, idade)\n            moto.inserir(cliente)\n        elif args[0] == \"leave\":\n            moto.remover()\n        elif args[0] == \"buy\":\n            tempo: int = int(args[1])\n            moto.comprarTempo(tempo)\n        elif args[0] == \"drive\":\n            tempo: int = int(args[1])\n            moto.dirigir(tempo)\n        elif args[0] == \"honk\":\n            moto.buzina()\n        else:\n            print(\"fail: comando invalido\")\n\nmain()",
+            "lines": "105"
         }
     ]
 }
