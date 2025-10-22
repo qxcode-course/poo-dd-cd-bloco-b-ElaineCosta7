@@ -1,0 +1,499 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-22_00-05-37",
+            "content": "@@ -4,17 +4,16 @@\n ss Tamgo\n-t\n chi: %0A  \n@@ -52,25 +52,25 @@\n int cleanMax\n-:\n+;\n  int):%0A     \n@@ -293,1639 +293,9 @@\n     \n-def set_energy(self, valor: int) -%3E None:%0A        if valor = 0: #esse 0 nao identifica morte, vou mudar%0A            self.__alive = False%0A    def set_clean(self, valor: int) -%3E None:%0A        if valor = 0:%0A            self.__alive = False%0A    def set_age(self, valor: int) -%3E None:%0A        if valor = 0:%0A            self.__alive = False %0A%0A%0A    def get_clean(self) -%3E int:%0A        return self.__clean%0A    def get_cleanMax(self) -%3E int:%0A        return self.__cleanMax%0A    def get_energy(self) -%3E int:%0A        return self.__energy%0A    def get_energyMax(self) -%3E int:%0A        return self.__energyMax%0A    def get_age(self) -%3E int:%0A        return self.__age%0A        %0A%0A    def isAlive(self) -%3E bool:%0A        if self.__age %3E 0:%0A            self.__alive = True%0A        if self.__age = 0:%0A            self.__alive = False%0A%0A    def __str__(self) -%3E str:%0A        return f%22E:%7Bself.__energy%7D, L:%7Bself.__clean%7D, I:%7Bself.__age%7D%22%0A%0Aclass Game:%0A    def __init__(self, pet: Tamgotchi):%0A        self.__pet: Tamgotchi = pet%0A%0A    def play(self) -%3E None:%0A        self.__energy - 2%0A        self.__clean - 3%0A        self.__idade + 1%0A%0A%0Adef main()%0A    bichinho = Tamgotchi()%0A    while True:%0A        line: str = input()%0A        print(%22$%22 + line)%0A        args: list%5Bstr%5D = line.split(%22 %22)%0A        if args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22show%22:%0A            print(bichinho)%0A        elif args%5B0%5D == %22init%22:%0A            energy = int(args%5B1%5D)%0A            clean = int(args%5B2%5D)%0A            bichinho = Tamgotchi(energy, clean)%0A        elif args%5B0%5D == %22play%22:%0A            bichinho.play()%0A        else:%0A            print(fail: comando invalido)%0A%0Amain()\n+    \n %0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2025-10-22_01-11-17",
+            "content": "@@ -48,17 +48,16 @@\n Max: int\n-,\n  cleanMa\n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-10-22_01-11-33",
+            "content": "@@ -351,17 +351,16 @@\n  valor =\n-=\n  0: #ess\n@@ -483,33 +483,32 @@\n       if valor =\n-=\n  0:%0A            \n@@ -589,17 +589,16 @@\n  valor =\n-=\n  0:%0A    \n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-10-22_01-11-48",
+            "content": "@@ -1067,17 +1067,16 @@\n .__age =\n-=\n  0:%0A    \n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-10-22_01-12-04",
+            "content": "@@ -1412,17 +1412,16 @@\n f main()\n-:\n %0A    bic\n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-10-22_01-12-13",
+            "content": "@@ -1899,17 +1899,16 @@\n   print(\n-%22\n fail: co\n@@ -1921,17 +1921,16 @@\n invalido\n-%22\n )%0A%0Amain(\n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-10-22_01-12-25",
+            "content": "@@ -1443,27 +1443,8 @@\n chi(\n-energyMax, cleanMax\n )%0A  \n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-10-22_01-13-13",
+            "content": "@@ -1446,16 +1446,18 @@\n (energyM\n+ax\n , cleanM\n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-10-22_01-13-25",
+            "content": "@@ -1441,24 +1441,25 @@\n otchi(energy\n+M\n , cleanMax)%0A\n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-10-22_01-13-31",
+            "content": "@@ -1443,10 +1443,24 @@\n chi(\n-%22%22\n+energy, cleanMax\n )%0A  \n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-10-22_01-13-43",
+            "content": "@@ -1441,26 +1441,16 @@\n otchi(%22%22\n-, cleanMax\n )%0A    wh\n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-10-22_01-14-02",
+            "content": "@@ -1439,19 +1439,28 @@\n mgotchi(\n-int\n+%22%22, cleanMax\n )%0A    wh\n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-10-22_01-14-27",
+            "content": "@@ -1439,17 +1439,19 @@\n mgotchi(\n-0\n+int\n )%0A    wh\n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-10-22_01-14-33",
+            "content": "@@ -1440,18 +1440,16 @@\n gotchi(0\n-, \n )%0A    wh\n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-10-22_01-14-39",
+            "content": "@@ -1442,17 +1442,16 @@\n tchi(0, \n-0\n )%0A    wh\n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-10-22_01-14-40",
+            "content": "@@ -1174,27 +1174,8 @@\n rgy%7D\n-/%7Bself.__energyMax%7D\n , L:\n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-10-22_01-16-11",
+            "content": "@@ -1211,26 +1211,9 @@\n ean%7D\n-/%7Bself.__cleanMax%7D\n+,\n  I:%7B\n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-10-22_01-16-44",
+            "content": "@@ -1225,17 +1225,16 @@\n leanMax%7D\n-,\n  I:%7Bself\n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-10-22_01-16-55",
+            "content": "@@ -1110,118 +1110,8 @@\n se%0A%0A\n-        def play(self) -%3E None:%0A        self.__energy - 2%0A        self.__clean - 3%0A        self.__idade + 1%0A%0A%0A\n     \n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-10-22_01-22-25",
+            "content": "@@ -1142,28 +1142,24 @@\n ne:%0A        \n-    \n self.__energ\n@@ -1168,28 +1168,24 @@\n - 2%0A        \n-  \n-  \n self.__clean\n@@ -1185,28 +1185,24 @@\n __clean - 3%0A\n-    \n         self\n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-10-22_01-22-38",
+            "content": "@@ -1106,32 +1106,144 @@\n  False%0A%0A        \n+def play(self) -%3E None:%0A            self.__energy - 2%0A            self.__clean - 3%0A            self.__idade + 1%0A\n %0A%0A    def __str_\n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-10-22_01-23-18",
+            "content": "@@ -989,36 +989,8 @@\n ol:%0A\n-        return self.__alive%0A\n     \n@@ -1390,158 +1390,68 @@\n f.__\n-pet.set_energy(self.__pet.get_energy() -2)%0A        self.__pet.set_clean(self.__pet.get_clean() -3)%0A        self.__pet.set_age(self.__pet.get_age() +1)\n+energy - 2%0A        self.__clean - 3%0A        self.__idade + 1\n %0A%0A%0Ad\n",
+            "lines": "73"
+        },
+        {
+            "label": "2025-10-22_01-41-05",
+            "content": "@@ -1403,23 +1403,8 @@\n ne:%0A\n-        return%0A\n     \n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-10-22_01-41-16",
+            "content": "@@ -2055,62 +2055,8 @@\n y()%0A\n-        elif args%5B0%5D == %22sleep%22:%0A            bichinho%0A\n     \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-10-22_01-42-06",
+            "content": "@@ -1411,547 +1411,14 @@\n     \n-self.__pet.set_energy(self.__pet.get_energy() - 2)%0A        self.__pet.set_clean(self.__pet.get_clean() - 3)%0A        self.__pet.set_age(self.__pet.get_age() + 1)%0A        if self.__pet.get_age() = 0:%0A            print(%22fail: pet esta morto%22)%0A%0A    def sleep(self) -%3E None:%0A        self.__pet.set_energy(self.__pet.get_energy() = self.__pet.get_energyMax())%0A        #idade aumenta do n%C3%BAmero de turnos que o pet dormiu.%0A        if self.__pet.get_energy() = 0:%0A            print(%22fail: pet morreu de fraqueza%22)%0A    %0A    def shower(self) -%3E None:\n+return\n %0A   \n@@ -1473,10 +1473,9 @@\n () -\n- 3\n+2\n )%0A  \n@@ -1528,36 +1528,10 @@\n n() \n-+ self.__pet.get_ cleanMax()\n+-3\n )%0A  \n@@ -1581,184 +1581,13 @@\n () +\n- 2)%0A        if self.__pet.get_age() -= 5:%0A            print(%22fail: nao esta com sono%22)%0A        if self.__pet.get_age() = 0:%0A            print(%22fail: pet morreu de sujeira%22\n+1\n )%0A%0A%0A\n-%0A\n def \n@@ -2084,16 +2084,16 @@\n sleep%22:%0A\n+\n         \n@@ -2108,72 +2108,8 @@\n inho\n-.sleep()%0A        elif args%5B0%5D == %22shower%22:%0A            bichinho.\n %0A   \n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-10-22_01-54-08",
+            "content": "@@ -1601,17 +1601,16 @@\n _age() =\n-=\n  0:%0A    \n",
+            "lines": "96"
+        },
+        {
+            "label": "2025-10-22_01-54-23",
+            "content": "@@ -1733,17 +1733,16 @@\n ergy() =\n-=\n  self.__\n",
+            "lines": "96"
+        },
+        {
+            "label": "2025-10-22_01-54-37",
+            "content": "@@ -1,2976 +1,57 @@\n-class Tamgotchi: %0A    def __init__(self, energyMax: int, cleanMax: int):%0A        self.__energyMax: int = energyMax%0A        self.__cleanMax: int = cleanMax%0A        self.__energy: int = energyMax%0A        self.__clean: int = cleanMax%0A        self.__age: int = 0%0A        self.__alive: bool = True%0A%0A    def set_energy(self, valor: int) -%3E None:%0A        if valor == 0: #esse 0 nao identifica morte, vou mudar%0A            self.__alive = False%0A    def set_clean(self, valor: int) -%3E None:%0A        if valor == 0:%0A            self.__alive = False%0A    def set_age(self, valor: int) -%3E None:%0A        if valor == 0:%0A            self.__alive = False %0A%0A%0A    def get_clean(self) -%3E int:%0A        return self.__clean%0A    def get_cleanMax(self) -%3E int:%0A        return self.__cleanMax%0A    def get_energy(self) -%3E int:%0A        return self.__energy%0A    def get_energyMax(self) -%3E int:%0A        return self.__energyMax%0A    def get_age(self) -%3E int:%0A        return self.__age%0A        %0A%0A    def isAlive(self) -%3E bool:%0A        return self.__alive%0A        if self.__age %3E 0:%0A            self.__alive = True%0A        if self.__age == 0:%0A            self.__alive = False%0A%0A        %0A%0A    def __str__(self) -%3E str:%0A        return f%22E:%7Bself.__energy%7D/%7Bself.__energyMax%7D, L:%7Bself.__clean%7D/%7Bself.__cleanMax%7D, I:%7Bself.__age%7D%22%0A%0Aclass Game:%0A    def __init__(self, pet: Tamgotchi):%0A        self.__pet: Tamgotchi = pet%0A%0A    def play(self) -%3E None:%0A        self.__pet.set_energy(self.__pet.get_energy() - 2)%0A        self.__pet.set_clean(self.__pet.get_clean() - 3)%0A        self.__pet.set_age(self.__pet.get_age() + 1)%0A        if self.__pet.get_age() == 0:%0A            print(%22fail: pet esta morto%22)%0A%0A    def sleep(self) -%3E None:%0A        self.__pet.set_energy(self.__pet.get_energy() == self.__pet.get_energyMax())%0A        #idade aumenta do n%C3%BAmero de turnos que o pet dormiu.%0A        if self.__pet.get_energy() == 0:%0A            print(%22fail: pet morreu de fraqueza%22)%0A    %0A    def shower(self) -%3E None:%0A        self.__pet.set_energy(self.__pet.get_energy() - 3)%0A        self.__pet.set_clean(self.__pet.get_clean() + self.__pet.get_ cleanMax())%0A        self.__pet.set_age(self.__pet.get_age() + 2)%0A        if self.__pet.get_age() -= 5:%0A            print(%22fail: nao esta com sono%22)%0A        if self.__pet.get_age() = 0:%0A            print(%22fail: pet morreu de sujeira%22)%0A%0A%0A%0Adef main():%0A    bichinho = Tamgotchi(0, 0)%0A    while True:%0A        line: str = input()%0A        print(%22$%22 + line)%0A        args: list%5Bstr%5D = line.split(%22 %22)%0A        if args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22show%22:%0A            print(bichinho)%0A        elif args%5B0%5D == %22init%22:%0A            energy = int(args%5B1%5D)%0A            clean = int(args%5B2%5D)%0A            bichinho = Tamgotchi(energy, clean)%0A        elif args%5B0%5D == %22play%22:%0A            bichinho.play()%0A        elif args%5B0%5D == %22sleep%22:%0A            bichinho.sleep()%0A        elif args%5B0%5D == %22shower%22:%0A            bichinho.%0A        else:%0A            print(%22fail: comando invalido%22)%0A%0Amain()\n+@@ -1856,25 +1856,24 @@%0A t_energy() =%0A-=%0A  0:%250A        \n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-10-22_02-17-39",
+            "content": "@@ -1,22 +1,21 @@\n class Tam\n-a\n gotchi: %0A   \n@@ -11,16 +11,16 @@\n otchi: %0A\n+\n     def \n@@ -1321,25 +1321,24 @@\n lf, pet: Tam\n-a\n gotchi):%0A   \n@@ -1353,25 +1353,24 @@\n f.__pet: Tam\n-a\n gotchi = pet\n@@ -2074,24 +2074,25 @@\n f.__pet.get_\n+ \n cleanMax())%0A\n@@ -2342,25 +2342,24 @@\n chinho = Tam\n-a\n gotchi(0, 0)\n@@ -2677,16 +2677,16 @@\n rgs%5B2%5D)%0A\n+\n         \n@@ -2703,17 +2703,16 @@\n ho = Tam\n-a\n gotchi(e\n",
+            "lines": "96"
+        },
+        {
+            "label": "2025-10-22_12-52-27",
+            "content": "@@ -349,23 +349,16 @@\n  if \n-self.__energy %3C\n+valor ==\n  0: \n@@ -434,98 +434,8 @@\n lse%0A\n-        if self.__energy = self.__energyMax:%0A            self.__energy = self.__energyMax%0A\n     \n",
+            "lines": "96"
+        },
+        {
+            "label": "2025-10-22_12-59-54",
+            "content": "@@ -463,17 +463,16 @@\n energy =\n-=\n  self.__\n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-22_13-00-12",
+            "content": "@@ -502,33 +502,32 @@\n  self.__energy =\n-=\n  self.__energyMa\n@@ -2277,16 +2277,17 @@\n _age() -\n+=\n  5:%0A    \n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-22_13-00-27",
+            "content": "@@ -2352,33 +2352,32 @@\n _pet.get_age() =\n-=\n  0:%0A            \n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-22_13-00-38",
+            "content": "@@ -3009,16 +3009,8 @@\n nho.\n-shower()\n %0A   \n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-22_13-00-56",
+            "content": "@@ -2444,20 +2444,26 @@\n hinho = \n-Game\n+Tamagotchi\n (0, 0)%0A \n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-22_13-01-25",
+            "content": "@@ -2449,26 +2449,20 @@\n  = Game(\n-Tamagotchi\n+0, 0\n )%0A    wh\n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-22_13-01-43",
+            "content": "@@ -2449,16 +2449,26 @@\n  = Game(\n+Tamagotchi\n )%0A    wh\n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-22_13-03-18",
+            "content": "@@ -2449,19 +2449,16 @@\n  = Game(\n-pet\n )%0A    wh\n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-22_13-03-26",
+            "content": "@@ -2437,19 +2437,28 @@\n     \n-jogo = None\n+bichinho = Game(pet)\n %0A   \n@@ -2667,29 +2667,17 @@\n int(\n-jogo) # ou bichim/pet\n+bichinho)\n %0A   \n@@ -2784,19 +2784,24 @@\n         \n-pet\n+bichinho\n  = Tamag\n@@ -2825,37 +2825,8 @@\n an)%0A\n-            jogo = Game(pet)%0A\n     \n@@ -2865,19 +2865,23 @@\n         \n-jog\n+bichinh\n o.play()\n@@ -2926,19 +2926,23 @@\n         \n-jog\n+bichinh\n o.sleep(\n@@ -2993,11 +2993,15 @@\n     \n-jog\n+bichinh\n o.sh\n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-22_13-18-07",
+            "content": "@@ -2654,19 +2654,20 @@\n   print(\n-pet\n+jogo\n ) # ou b\n",
+            "lines": "99"
+        },
+        {
+            "label": "2025-10-22_13-18-22",
+            "content": "@@ -2658,16 +2658,11 @@\n int(\n-bichinho\n+pet\n ) # \n",
+            "lines": "99"
+        },
+        {
+            "label": "2025-10-22_13-18-47",
+            "content": "@@ -2419,140 +2419,8 @@\n %22)%0A%0A\n-def __str__(self) -%3E str:%0A        return f%22E:%7Bself.__energy%7D/%7Bself.__energyMax%7D, L:%7Bself.__clean%7D/%7Bself.__cleanMax%7D, I:%7Bself.__age%7D%22\n %0A%0Ade\n@@ -2654,19 +2654,23 @@\n   print(\n-jog\n+bichinh\n o) # ou \n",
+            "lines": "99"
+        },
+        {
+            "label": "2025-10-22_13-19-17",
+            "content": "@@ -2411,28 +2411,24 @@\n  sujeira%22)%0A%0A\n-    \n def __str__(\n@@ -2460,32 +2460,100 @@\n urn \n-str(self.__pet)%0A        \n+f%22E:%7Bself.__energy%7D/%7Bself.__energyMax%7D, L:%7Bself.__clean%7D/%7Bself.__cleanMax%7D, I:%7Bself.__age%7D%22%0A\n %0Adef\n",
+            "lines": "100"
+        },
+        {
+            "label": "2025-10-22_13-23-48",
+            "content": "@@ -1696,26 +1696,22 @@\n pet.\n-isAliv\n+get_ag\n e() == \n-False\n+0\n :%0A  \n@@ -2476,16 +2476,24 @@\n .__pet)%0A\n+        \n %0Adef mai\n",
+            "lines": "100"
+        },
+        {
+            "label": "2025-10-22_13-26-08",
+            "content": "@@ -1505,92 +1505,8 @@\n ne:%0A\n-        if self.__pet.isAlive() == False:%0A            print(%22fail: pet esta morto%22)%0A\n     \n",
+            "lines": "100"
+        },
+        {
+            "label": "2025-10-22_13-26-51",
+            "content": "@@ -1493,32 +1493,116 @@\n (self) -%3E None:%0A\n+        if self.__pet.isAlive() == False:%0A            print(%22fail: pet esta morto%22)%0A\n         self.__p\n@@ -1626,16 +1626,26 @@\n f.__pet.\n+get_energy\n () - 2)%0A\n",
+            "lines": "102"
+        },
+        {
+            "label": "2025-10-22_13-27-41",
+            "content": "@@ -1538,22 +1538,22 @@\n (self.__\n-energy\n+pet.()\n  - 2)%0A  \n",
+            "lines": "100"
+        },
+        {
+            "label": "2025-10-22_13-27-48",
+            "content": "@@ -1542,19 +1542,8 @@\n f.__\n-pet.self.__\n ener\n",
+            "lines": "100"
+        },
+        {
+            "label": "2025-10-22_13-28-02",
+            "content": "@@ -1542,28 +1542,29 @@\n f.__pet.\n-get\n+self._\n _energy\n-()\n  - 2)%0A  \n",
+            "lines": "100"
+        },
+        {
+            "label": "2025-10-22_13-28-20",
+            "content": "@@ -1617,32 +1617,51 @@\n () - 3)%0A        \n+self.__pet.set_age(\n self.__pet.get_a\n@@ -1668,16 +1668,17 @@\n ge() + 1\n+)\n %0A       \n",
+            "lines": "100"
+        },
+        {
+            "label": "2025-10-22_13-29-33",
+            "content": "@@ -533,38 +533,8 @@\n Max%0A\n-        self.__energy = valor%0A\n     \n@@ -566,32 +566,32 @@\n : int) -%3E None:%0A\n+\n         if valor\n@@ -634,37 +634,8 @@\n lse%0A\n-        self.__clean = valor%0A\n     \n@@ -688,32 +688,32 @@\n  if valor == 0:%0A\n+\n             self\n@@ -734,35 +734,8 @@\n se %0A\n-        self.__age = valor%0A\n %0A%0A  \n@@ -1625,35 +1625,16 @@\n         \n-self.__pet.set_age(\n self.__p\n@@ -1649,17 +1649,16 @@\n ge() + 1\n-)\n %0A       \n",
+            "lines": "100"
+        },
+        {
+            "label": "2025-10-22_13-35-48",
+            "content": "@@ -437,24 +437,111 @@\n = False%0A    \n+    if self.__energy == self.__energyMax:%0A            self.__energy == self.__energyMax\n %0A        sel\n",
+            "lines": "103"
+        },
+        {
+            "label": "2025-10-22_13-36-13",
+            "content": "@@ -445,104 +445,8 @@\n     \n-    if self.__energy == self.__energyMax:%0A            self.__energy == self.__energyMax%0A        \n %0A   \n",
+            "lines": "102"
+        },
+        {
+            "label": "2025-10-22_13-36-22",
+            "content": "@@ -364,16 +364,55 @@\n gy %3C 0: \n+#esse 0 nao identifica morte, vou mudar\n %0A       \n@@ -486,40 +486,8 @@\n Max:\n- #verificar se isso %C3%A9 necessario\n %0A   \n@@ -521,32 +521,41 @@\n elf.__energyMax%0A\n+        %0A\n         self.__e\n@@ -2047,34 +2047,33 @@\n f.__pet.\n-isAlive\n+get_energy\n () == \n-False\n+0\n :%0A      \n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-10-22_13-41-02",
+            "content": "@@ -2035,25 +2035,26 @@\n pet.\n-get_energy\n+isAlive\n () == \n-0\n+False\n :%0A  \n",
+            "lines": "103"
+        },
+        {
+            "label": "2025-10-22_13-43-24",
+            "content": "@@ -2017,17 +2017,16 @@\n         \n-#\n if self.\n@@ -2062,17 +2062,16 @@\n         \n-#\n print(%22f\n",
+            "lines": "103"
+        },
+        {
+            "label": "2025-10-22_13-43-40",
+            "content": "@@ -1952,61 +1952,8 @@\n ())%0A\n-        self.__pet.set_age(self.__pet.get_age() + 3)%0A\n     \n",
+            "lines": "103"
+        },
+        {
+            "label": "2025-10-22_13-45-34",
+            "content": "@@ -2002,9 +2002,9 @@\n ) + \n-6\n+3\n )%0A  \n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-10-22_13-46-22",
+            "content": "@@ -334,33 +334,32 @@\n %3E None:%0A        \n-#\n if self.__energy\n@@ -377,17 +377,16 @@\n         \n-#\n self.__a\n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-10-22_13-47-50",
+            "content": "@@ -334,32 +334,33 @@\n %3E None:%0A        \n+#\n if self.__energy\n@@ -370,32 +370,33 @@\n 0: %0A            \n+#\n self.__alive = F\n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-10-22_13-49-31",
+            "content": "@@ -2062,32 +2062,33 @@\n dormiu.%0A        \n+#\n if self.__pet.ge\n@@ -2108,32 +2108,33 @@\n  0:%0A            \n+#\n print(%22fail: pet\n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-10-22_13-50-42",
+            "content": "@@ -2070,17 +2070,16 @@\n         \n-#\n if self.\n@@ -2115,17 +2115,16 @@\n         \n-#\n print(%22f\n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-10-22_13-50-52",
+            "content": "@@ -1885,32 +1885,59 @@\n _pet.set_energy(\n+self.__pet.get_energy() == \n self.__pet.get_e\n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-10-22_13-53-28",
+            "content": "@@ -2356,33 +2356,32 @@\n () + 2)%0A        \n-#\n if self.__pet.ge\n@@ -2397,33 +2397,32 @@\n  5:%0A            \n-#\n print(%22fail: nao\n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-10-22_13-54-13",
+            "content": "@@ -2243,32 +2243,57 @@\n __pet.set_clean(\n+self.__pet.get_clean() + \n self.__pet.get_c\n@@ -2440,33 +2440,32 @@\n  sono%22)%0A        \n-#\n if self.__pet.ge\n@@ -2482,33 +2482,32 @@\n  0:%0A            \n-#\n print(%22fail: pet\n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-10-22_13-55-34",
+            "content": "@@ -1978,115 +1978,8 @@\n  6)%0A\n-        if self.__pet.get_energy == self.__pet.get_energyMax:%0A            print(%22fail: nao esta com sono%22)%0A\n     \n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-10-22_13-57-37",
+            "content": "@@ -1977,27 +1977,8 @@\n + 6)\n- #baseado em turnos\n %0A   \n@@ -2002,26 +2002,24 @@\n t.get_energy\n-()\n  == self.__p\n@@ -2034,18 +2034,16 @@\n nergyMax\n-()\n :%0A      \n@@ -2073,32 +2073,93 @@\n esta com sono%22)%0A\n+        #idade aumenta do n%C3%BAmero de turnos que o pet dormiu.%0A\n         #if self\n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-10-22_14-00-06",
+            "content": "@@ -1986,16 +1986,22 @@\n eado em \n+turnos\n %0A       \n@@ -2021,24 +2021,26 @@\n t.get_energy\n+()\n  == self.__p\n@@ -2055,16 +2055,18 @@\n nergyMax\n+()\n :%0A      \n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-10-22_14-00-31",
+            "content": "@@ -2023,12 +2023,10 @@\n ergy\n-() !\n+ =\n = se\n@@ -2048,13 +2048,11 @@\n ergy\n-(- 5)\n+Max\n :%0A  \n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-10-22_14-01-26",
+            "content": "@@ -2051,12 +2051,12 @@\n rgy(\n-) -5\n+- 5)\n :%0A  \n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-10-22_14-01-40",
+            "content": "@@ -2015,26 +2015,28 @@\n t.get_energy\n- =\n+() !\n = self.__pet\n@@ -2046,19 +2046,21 @@\n t_energy\n-Max\n+() -5\n :%0A      \n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-10-22_14-03-10",
+            "content": "@@ -1867,134 +1867,8 @@\n ne:%0A\n-        if self.__pet.get_energy == self.__pet.get_energyMax:%0A            print(%22fail: nao esta com sono%22)%0A            return%0A\n     \n@@ -1991,24 +1991,122 @@\n em %0A        \n+if self.__pet.get_energy == self.__pet.get_energyMax:%0A            print(%22fail: nao esta com sono%22)\n %0A        #if\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-10-22_14-05-42",
+            "content": "@@ -1899,12 +1899,11 @@\n ergy\n-() %3E\n+ ==\n  sel\n@@ -1923,22 +1923,16 @@\n nergyMax\n-() - 5\n :%0A      \n@@ -2116,14 +2116,17 @@\n  em \n-turnos\n+%0A        \n %0A   \n",
+            "lines": "107"
+        },
+        {
+            "label": "2025-10-22_14-08-04",
+            "content": "@@ -1749,33 +1749,32 @@\n () + 1)%0A        \n-#\n if self.__pet.is\n@@ -1795,33 +1795,32 @@\n se:%0A            \n-#\n print(%22fail: pet\n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-10-22_14-08-27",
+            "content": "@@ -2260,116 +2260,8 @@\n ne:%0A\n-        if self.__pet.get_clean() == 0:%0A            print(%22fail: pet morreu de sujeira%22)%0A            return%0A\n     \n@@ -2428,24 +2428,189 @@\n  2)%0A        \n+#if self.__pet.get_age() - 5:%0A            #print(%22fail: nao esta com sono%22)%0A        #if self.__pet.get_age() == 0:%0A            #print(%22fail: pet morreu de sujeira%22)%0A\n %0A    def __s\n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-10-22_14-10-02",
+            "content": "@@ -1584,116 +1584,8 @@\n ne:%0A\n-        if self.__pet.get_clean() == 0:%0A            print(%22fail: pet morreu de sujeira%22)%0A            return%0A\n     \n@@ -2248,32 +2248,140 @@\n (self) -%3E None:%0A\n+        if self.__pet.get_clean() == 0:%0A            print(%22fail: pet morreu de sujeira%22)%0A            return%0A\n         self.__p\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-10-22_14-10-46",
+            "content": "@@ -1615,16 +1615,17 @@\n lean() =\n+=\n  0:%0A    \n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-10-22_14-11-15",
+            "content": "@@ -1614,17 +1614,16 @@\n clean() \n-%3C\n = 0:%0A   \n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-10-22_14-11-55",
+            "content": "@@ -1580,33 +1580,32 @@\n %3E None:%0A        \n-#\n if self.__pet.is\n@@ -1602,34 +1602,32 @@\n f.__pet.\n-isAlive() == False\n+get_clean() %3C= 0\n :%0A      \n@@ -1624,33 +1624,32 @@\n  0:%0A            \n-#\n print(%22fail: pet\n@@ -1649,28 +1649,54 @@\n il: pet \n-esta morto%22)\n+morreu de sujeira%22)%0A            return\n %0A       \n@@ -1796,32 +1796,32 @@\n et_clean() - 3)%0A\n+\n         self.__p\n@@ -1861,175 +1861,8 @@\n  1)%0A\n-        if self.__pet.get_clean() %3C= 0:%0A            print(%22fail: pet morreu de sujeira%22)%0A            self.__pet.set_.clean(0)%0A            self.__pet.isAlive() = False%0A\n     \n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-10-22_14-16-57",
+            "content": "@@ -1991,25 +1991,24 @@\n .isAlive() =\n-=\n  False%0A     \n",
+            "lines": "108"
+        },
+        {
+            "label": "2025-10-22_14-17-13",
+            "content": "@@ -1947,24 +1947,25 @@\n f.__pet.set_\n+.\n clean(0)%0A   \n",
+            "lines": "108"
+        },
+        {
+            "label": "2025-10-22_14-17-47",
+            "content": "@@ -1580,32 +1580,33 @@\n %3E None:%0A        \n+#\n if self.__pet.is\n@@ -1627,32 +1627,33 @@\n se:%0A            \n+#\n print(%22fail: pet\n@@ -1997,24 +1997,110 @@\n e() == False\n+%0A        #if self.__pet.isAlive() == False:%0A            #print(%22fail: pet esta morto%22)\n %0A%0A    def sl\n",
+            "lines": "108"
+        },
+        {
+            "label": "2025-10-22_14-19-17",
+            "content": "@@ -1664,35 +1664,16 @@\n morto%22)%0A\n-            return%0A\n         \n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-10-22_14-19-39",
+            "content": "@@ -2053,111 +2053,8 @@\n ne:%0A\n-        if self.__pet.isAlive() == False:%0A            print(%22fail: pet esta morto%22)%0A            return%0A\n     \n@@ -2444,111 +2444,8 @@\n ne:%0A\n-        if self.__pet.isAlive() == False:%0A            print(%22fail: pet esta morto%22)%0A            return%0A\n     \n",
+            "lines": "107"
+        },
+        {
+            "label": "2025-10-22_14-20-38",
+            "content": "@@ -810,16 +810,17 @@\n  valor%0A%0A\n+%0A\n     def \n@@ -1124,32 +1124,33 @@\n .__age%0A        %0A\n+%0A\n     def isAlive(\n@@ -1305,32 +1305,42 @@\n _alive = False%0A%0A\n+        %0A%0A\n     def __str__(\n@@ -2415,32 +2415,33 @@\n  turnos%0A        \n+#\n if self.__pet.ge\n@@ -2470,16 +2470,17 @@\n        #\n+p\n rint(%22fa\n@@ -3549,14 +3549,15 @@\n lido%22)%0A%0A\n-\n main()\n+%0A\n",
+            "lines": "113"
+        },
+        {
+            "label": "2025-10-22_14-23-10",
+            "content": "@@ -2448,33 +2448,33 @@\n  0:%0A            \n-p\n+#\n rint(%22fail: pet \n",
+            "lines": "109"
+        },
+        {
+            "label": "2025-10-22_14-23-24",
+            "content": "@@ -2277,118 +2277,8 @@\n urn%0A\n-        if self.__pet.get_energy() == 0:%0A            print(%22fail: pet morreu de fraqueza%22)%0A            return%0A\n     \n@@ -2403,16 +2403,107 @@\n  turnos%0A\n+        if self.__pet.get_energy() == 0:%0A            print(%22fail: pet morreu de fraqueza%22)%0A\n     %0A   \n",
+            "lines": "109"
+        },
+        {
+            "label": "2025-10-22_14-23-57",
+            "content": "@@ -360,17 +360,16 @@\n energy %3C\n-=\n  0: %0A   \n@@ -388,120 +388,21 @@\n f.__\n-energy = 0%0A            self.__alive = False%0A            print(%22fail: pet morreu de fraqueza%22)%0A            return\n+alive = False\n %0A   \n",
+            "lines": "110"
+        },
+        {
+            "label": "2025-10-22_14-31-49",
+            "content": "@@ -338,38 +338,8 @@\n ne:%0A\n-        self.__energy = valor%0A\n     \n@@ -614,32 +614,62 @@\n elf.__energyMax%0A\n+        self.__energy = valor%0A\n     def set_clea\n",
+            "lines": "113"
+        },
+        {
+            "label": "2025-10-22_14-32-23",
+            "content": "@@ -573,16 +573,48 @@\n ergyMax:\n+ #verificar se isso %C3%A9 necessario\n %0A       \n@@ -652,17 +652,16 @@\n ergyMax%0A\n-%0A\n     def \n@@ -774,33 +774,32 @@\n __clean = valor%0A\n-%0A\n     def set_age(\n@@ -1289,16 +1289,136 @@\n .__alive\n+%0A        if self.__age %3E 0:%0A            self.__alive = True%0A        if self.__age == 0:%0A            self.__alive = False\n %0A%0A    de\n",
+            "lines": "113"
+        },
+        {
+            "label": "2025-10-22_14-37-44",
+            "content": "@@ -670,37 +670,8 @@\n ne:%0A\n-        self.__clean = valor%0A\n     \n@@ -717,24 +717,53 @@\n live = False\n+%0A        self.__clean = valor\n %0A%0A    def se\n@@ -2856,19 +2856,20 @@\n ():%0A    \n-pet\n+jogo\n  = None%0A\n@@ -3077,19 +3077,20 @@\n   print(\n-pet\n+jogo\n ) # ou b\n@@ -3254,19 +3254,20 @@\n         \n-pet\n+jogo\n  = Game(\n@@ -3315,19 +3315,20 @@\n         \n-pet\n+jogo\n .play()%0A\n@@ -3372,19 +3372,20 @@\n         \n-pet\n+jogo\n .sleep()\n@@ -3431,19 +3431,20 @@\n         \n-pet\n+jogo\n .shower(\n",
+            "lines": "111"
+        },
+        {
+            "label": "2025-10-22_14-39-23",
+            "content": "@@ -553,17 +553,18 @@\n _energy \n-%3E\n+==\n  self.__\n@@ -601,16 +601,17 @@\n energy =\n+=\n  self.__\n@@ -799,35 +799,8 @@\n ne:%0A\n-        self.__age = valor%0A\n     \n@@ -842,32 +842,60 @@\n .__alive = False\n+ %0A        self.__age = valor\n %0A%0A    def get_cl\n",
+            "lines": "111"
+        },
+        {
+            "label": "2025-10-22_14-40-45",
+            "content": "@@ -819,16 +819,72 @@\n  = valor\n+%0A        if valor == 0:%0A            self.__alive = False\n %0A%0A    de\n",
+            "lines": "111"
+        },
+        {
+            "label": "2025-10-22_14-41-48",
+            "content": "@@ -701,16 +701,63 @@\n         \n+if valor == 0:%0A            self.__alive = False\n %0A%0A    de\n",
+            "lines": "109"
+        },
+        {
+            "label": "2025-10-22_14-42-44",
+            "content": "@@ -705,78 +705,8 @@\n     \n-if valor %3E self.__cleanMax:%0A            self.__clean = self.__cleanMax\n %0A%0A  \n",
+            "lines": "108"
+        },
+        {
+            "label": "2025-10-22_14-46-01",
+            "content": "@@ -775,64 +775,8 @@\n nMax\n-%0A        if valor == 0:%0A            self.__alive = False\n %0A%0A  \n",
+            "lines": "109"
+        },
+        {
+            "label": "2025-10-22_14-46-39",
+            "content": "@@ -2146,17 +2146,16 @@\n ergy() %3E\n-=\n  self.__\n",
+            "lines": "111"
+        },
+        {
+            "label": "2025-10-22_14-47-57",
+            "content": "@@ -2464,16 +2464,35 @@\n e() + 6)\n+ #baseado em turnos\n %0A    %0A  \n",
+            "lines": "111"
+        },
+        {
+            "label": "2025-10-22_14-49-25",
+            "content": "class Tamagotchi: \n    def __init__(self, energyMax: int, cleanMax: int):\n        self.__energyMax: int = energyMax\n        self.__cleanMax: int = cleanMax\n        self.__energy: int = energyMax\n        self.__clean: int = cleanMax\n        self.__age: int = 0\n        self.__alive: bool = True\n\n    def set_energy(self, valor: int) -> None:\n        self.__energy = valor\n        if self.__energy <= 0: \n            self.__energy = 0\n            self.__alive = False\n            print(\"fail: pet morreu de fraqueza\")\n            return\n        if self.__energy > self.__energyMax:\n            self.__energy = self.__energyMax\n\n    def set_clean(self, valor: int) -> None:\n        self.__clean = valor\n        if valor > self.__cleanMax:\n            self.__clean = self.__cleanMax\n        if valor == 0:\n            self.__alive = False\n\n    def set_age(self, valor: int) -> None:\n        self.__age = valor\n\n    def get_clean(self) -> int:\n        return self.__clean\n    def get_cleanMax(self) -> int:\n        return self.__cleanMax\n    def get_energy(self) -> int:\n        return self.__energy\n    def get_energyMax(self) -> int:\n        return self.__energyMax\n    def get_age(self) -> int:\n        return self.__age\n        \n    def isAlive(self) -> bool:\n        return self.__alive\n\n    def __str__(self) -> str:\n        return f\"E:{self.__energy}/{self.__energyMax}, L:{self.__clean}/{self.__cleanMax}, I:{self.__age}\"\n\nclass Game:\n    def __init__(self, pet: Tamagotchi):\n        self.__pet: Tamagotchi = pet\n\n    def play(self) -> None:\n        if self.__pet.isAlive() == False:\n            print(\"fail: pet esta morto\")\n            return\n        self.__pet.set_energy(self.__pet.get_energy() - 2)\n        self.__pet.set_clean(self.__pet.get_clean() - 3)\n        self.__pet.set_age(self.__pet.get_age() + 1)\n        if self.__pet.get_clean() <= 0:\n            print(\"fail: pet morreu de sujeira\")\n            self.__pet.set_clean(0)\n            self.__pet.isAlive() == False\n\n    def sleep(self) -> None:\n        if self.__pet.isAlive() == False:\n            print(\"fail: pet esta morto\")\n            return\n        if self.__pet.get_energy() >= self.__pet.get_energyMax() - 5:\n            print(\"fail: nao esta com sono\")\n            return\n        if self.__pet.get_energy() == 0:\n            print(\"fail: pet morreu de fraqueza\")\n            return\n        self.__pet.set_energy(self.__pet.get_energyMax())\n        self.__pet.set_age(self.__pet.get_age() + 6)\n    \n    def shower(self) -> None:\n        if self.__pet.isAlive() == False:\n            print(\"fail: pet esta morto\")\n            return\n        self.__pet.set_energy(self.__pet.get_energy() - 3)\n        self.__pet.set_clean(self.__pet.get_cleanMax())\n        self.__pet.set_age(self.__pet.get_age() + 2)\n        \n    def __str__(self) -> str:\n        return str(self.__pet)\n\ndef main():\n    pet = None\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(pet) # ou bichim/pet\n        elif args[0] == \"init\":\n            energy = int(args[1])\n            clean = int(args[2])\n            pet = Tamagotchi(energy, clean)\n            pet = Game(pet)\n        elif args[0] == \"play\":\n            pet.play()\n        elif args[0] == \"sleep\":\n            pet.sleep()\n        elif args[0] == \"shower\":\n            pet.shower()\n        else:\n            print(\"fail: comando invalido\")\n\nmain()",
+            "lines": "111"
+        }
+    ]
+}
