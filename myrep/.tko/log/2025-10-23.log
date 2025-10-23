@@ -1,0 +1,35 @@
+2025-10-23 00:00:27, EXEC, v:1, k:poo@grafite, mode:FULL, rate:0, size:95
+2025-10-23 00:05:42, EXEC, v:1, k:poo@grafite, mode:FULL, rate:10, size:101
+2025-10-23 00:07:09, EXEC, v:1, k:poo@grafite, mode:FULL, rate:10, size:101
+2025-10-23 00:07:14, EXEC, v:1, k:poo@grafite, mode:FULL, rate:10
+2025-10-23 00:11:24, EXEC, v:1, k:poo@grafite, mode:FULL, rate:90, size:101
+2025-10-23 00:14:43, EXEC, v:1, k:poo@grafite, mode:FULL, rate:80, size:102
+2025-10-23 00:15:25, EXEC, v:1, k:poo@grafite, mode:FULL, rate:90, size:102
+2025-10-23 00:16:08, EXEC, v:1, k:poo@grafite, mode:FULL, rate:80, size:102
+2025-10-23 00:16:15, EXEC, v:1, k:poo@grafite, mode:FULL, rate:90, size:102
+2025-10-23 00:19:30, EXEC, v:1, k:poo@grafite, mode:FULL, rate:90, size:104
+2025-10-23 00:24:01, EXEC, v:1, k:poo@grafite, mode:FULL, rate:0, size:107
+2025-10-23 00:24:21, EXEC, v:1, k:poo@grafite, mode:FULL, rate:0, size:107
+2025-10-23 00:24:33, EXEC, v:1, k:poo@grafite, mode:FULL, rate:90, size:107
+2025-10-23 00:24:51, EXEC, v:1, k:poo@grafite, mode:FULL, rate:90, size:107
+2025-10-23 00:25:45, EXEC, v:1, k:poo@grafite, mode:FULL, rate:80, size:107
+2025-10-23 00:27:46, EXEC, v:1, k:poo@grafite, mode:FULL, rate:80, size:107
+2025-10-23 00:30:56, EXEC, v:1, k:poo@grafite, mode:FULL, rate:70, size:97
+2025-10-23 00:32:44, EXEC, v:1, k:poo@grafite, mode:FULL, rate:90, size:99
+2025-10-23 00:34:43, EXEC, v:1, k:poo@grafite, mode:FULL, rate:90, size:102
+2025-10-23 00:34:46, EXEC, v:1, k:poo@grafite, mode:FULL, rate:90
+2025-10-23 00:35:30, EXEC, v:1, k:poo@grafite, mode:FULL, rate:90
+2025-10-23 00:35:31, EXEC, v:1, k:poo@grafite, mode:FULL, rate:90
+2025-10-23 01:01:15, EXEC, v:1, k:poo@grafite, mode:FULL, rate:90
+2025-10-23 01:02:36, EXEC, v:1, k:poo@grafite, mode:FULL, rate:90, size:104
+2025-10-23 01:02:49, EXEC, v:1, k:poo@grafite, mode:FULL, rate:90, size:104
+2025-10-23 01:39:49, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-23 01:39:50, EXEC, v:1, k:poo@notebook, mode:FREE, size:31
+2025-10-23 01:40:56, EXEC, v:1, k:poo@grafite, mode:FULL, rate:100, size:102
+2025-10-23 01:41:50, MOVE, v:1, k:poo@tamagotchi, mode:PICK
+2025-10-23 01:41:51, EXEC, v:1, k:poo@tamagotchi, mode:FULL, rate:100, size:111
+2025-10-23 01:43:01, MOVE, v:1, k:poo@tamagotchi, mode:BACK
+2025-10-23 01:44:19, SELF, v:1, k:poo@grafite, iagen:gpt, alone:6, study:240
+2025-10-23 01:44:29, MOVE, v:1, k:poo@grafite, mode:PICK
+2025-10-23 01:44:30, EXEC, v:1, k:poo@grafite, mode:FULL, rate:100
+2025-10-23 01:44:32, MOVE, v:1, k:poo@grafite, mode:BACK

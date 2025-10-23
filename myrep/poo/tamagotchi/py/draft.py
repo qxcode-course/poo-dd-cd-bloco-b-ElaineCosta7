@@ -93,7 +93,7 @@ def main():
         if args[0] == "end":
             break
         elif args[0] == "show":
-            print(pet) # ou bichim/pet
+            print(pet)
         elif args[0] == "init":
             energy = int(args[1])
             clean = int(args[2])

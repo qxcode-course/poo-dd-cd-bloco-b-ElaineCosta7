@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-22_14-56-39",
+            "content": "@@ -1,837 +0,0 @@\n-class Bateria:%0A    def __init__(self, capacidade):%0A        self.__capacidade: int = capacidade%0A        self.__carga: int = capacidade%0A%0Aclass Carregador:%0A    def __init__(self, potencia):%0A        self.__potencia: int = potencia%0A%0Aclass Notebook:%0A    def __init__(self):%0A        self.__ligado: bool = False%0A        self.__bateria: Bateria %7C None = None%0A%0A    def ligar(self):%0A%0A    def desligar(self):%0A%0A    def mostrar(self) -%3E bool:%0A        print(f%22status: %7Bself.__ligado%7D%22)%0A%0A    def usar(self, tempo):%0A%0A%0Anotebook = Notebook() # criando notebook%0Anotebook.mostrar()    # msg: Status: Desligado%0Anotebook.usar(10)     # msg: erro: ligue o notebook primeiro%0Anotebook.ligar()      # msg: notebook ligado%0Anotebook.mostrar()    # msg: Status: Ligado%0Anotebook.usar(10)     # msg: Usando por 10 minutos%0Anotebook.desligar()   # msg: notebook desligado\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-23_01-39-50",
+            "content": "class Bateria:\n    def __init__(self, capacidade):\n        self.__capacidade: int = capacidade\n        self.__carga: int = capacidade\n\nclass Carregador:\n    def __init__(self, potencia):\n        self.__potencia: int = potencia\n\nclass Notebook:\n    def __init__(self):\n        self.__ligado: bool = False\n        self.__bateria: Bateria | None = None\n\n    def ligar(self):\n\n    def desligar(self):\n\n    def mostrar(self) -> bool:\n        print(f\"status: {self.__ligado}\")\n\n    def usar(self, tempo):\n\n\nnotebook = Notebook() # criando notebook\nnotebook.mostrar()    # msg: Status: Desligado\nnotebook.usar(10)     # msg: erro: ligue o notebook primeiro\nnotebook.ligar()      # msg: notebook ligado\nnotebook.mostrar()    # msg: Status: Ligado\nnotebook.usar(10)     # msg: Usando por 10 minutos\nnotebook.desligar()   # msg: notebook desligado",
+            "lines": "31"
+        }
+    ]
+}
