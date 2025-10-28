@@ -1,0 +1,12 @@
+2025-10-28 05:06:15, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-28 05:06:17, EXEC, v:1, k:poo@notebook, mode:FREE, size:147
+2025-10-28 05:53:28, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-28 05:53:31, EXEC, v:1, k:poo@notebook, mode:FREE, size:175
+2025-10-28 06:01:04, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-28 06:01:05, EXEC, v:1, k:poo@notebook, mode:FREE, size:175
+2025-10-28 13:05:12, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-28 13:05:13, MOVE, v:1, k:poo@notebook, mode:BACK
+2025-10-28 13:05:52, SELF, v:1, k:poo@notebook, alone:6, study:300
+2025-10-28 13:06:01, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-28 13:06:02, MOVE, v:1, k:poo@notebook, mode:BACK
+2025-10-28 13:06:08, SELF, v:1, k:poo@notebook, iagen:gpt, alone:6, study:300
